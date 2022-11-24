@@ -20,6 +20,9 @@ const config = {
       colors: {
         primary: '#ff5787',
         secondary: '#ffefed',
+      },
+      lineHeight: {
+        'extra-loose': '2.5',
       }
     },
   },

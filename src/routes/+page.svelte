@@ -21,7 +21,7 @@ import '@splidejs/svelte-splide/css/core'
 
 <section class="bg-[#ffdfdf] bg-no-repeat bg-center bg-[length:auto_100%]" style="background-image: url(/images/hero-bg.svg)">
   <div class="container mx-auto pt-4 pb-6 text-2xl leading-loose relative">
-    <img src="/images/hero-body.png" alt="" class="h-[85%] absolute bottom-0 left-[45%] z-10">
+    <img src="/images/hero-body.webp" alt="" class="h-[85%] absolute bottom-0 left-[45%] z-10">
     <img src="/images/hero.svg" alt="">
   </div>
 </section>
