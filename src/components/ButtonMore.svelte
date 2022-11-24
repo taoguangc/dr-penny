@@ -1,0 +1,1 @@
+<button class="absolute bottom-12 lg:bottom-24 left-16 w-48 lg:w-72 h-12 lg:h-16 bg-white border border-primary rounded-full font-semibold text-primary hover:bg-primary hover:text-white">了解更多</button>
