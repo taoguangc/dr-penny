@@ -1,9 +1,12 @@
 <script>
-import {onMount} from "svelte"
-let currentPath
-onMount(() => {
-  currentPath = window.location.pathname
-})
+import { page } from "$app/stores"
+
+const nav = [
+  { title: "首页", path: "/" },
+  { title: "个人治愈", path: "/healing" },
+  { title: "婚姻提升", path: "/marriage" },
+  { title: "免费资料", path: "/info" },
+]
 </script>
 
 <header>
@@ -11,10 +14,9 @@ onMount(() => {
     <img src="/images/logo-penny.svg" alt="Dr.Penny">
     <nav class="lg:pt-5">
       <ul class="flex flex-col lg:flex-row lg:space-x-16 xl:space-x-24 text-[1.3rem] p-0">
-        <li class="py-3 hover:border-b-4 hover:border-primary border-b-4 border-primary"><a href="/">首页</a></li>
-        <li class="py-3 hover:border-b-4 hover:border-primary"><a href="/healing">个人治愈</a></li>
-        <li class="py-3 hover:border-b-4 hover:border-primary"><a href="/marriage">婚姻提升</a></li>
-        <li class="py-3 hover:border-b-4 hover:border-primary"><a href="/information">免费资料</a></li>
+        {#each nav as item}
+        <li class="py-3 hover:border-b-4 hover:border-primary {$page.url.pathname === item.path ? "border-b-4 border-primary" : ""}"><a href={item.path}>{item.title}</a></li>
+        {/each}
       </ul>
     </nav>
     <div class="lg:pt-5 text-[1.3rem] flex flex-row items-center">
