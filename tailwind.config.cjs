@@ -20,6 +20,10 @@ const config = {
       colors: {
         primary: '#ff5787',
         secondary: '#ffefed',
+        indigo: {
+          300: '#8fa7ff',
+          400: '#6f87ff',
+        },
       },
       lineHeight: {
         'extra-loose': '2.5',

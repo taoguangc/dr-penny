@@ -1,10 +1,9 @@
 <script>
 import { onMount } from 'svelte'
 import { animate, inView } from 'motion'
-import ButtonMore from '../components/ButtonMore.svelte'
+import ButtonMore from '$lib/components/ButtonMore.svelte'
 
 import { Splide, SplideSlide } from '@splidejs/svelte-splide'
-
 import '@splidejs/svelte-splide/css/core'
 
 

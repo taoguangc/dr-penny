@@ -1,11 +1,16 @@
 <script>
-  import '../app.postcss'
-  import Header from '../components/Header.svelte'
-  import Footer from '../components/Footer.svelte'
+import '../app.postcss'
+import Header from '$lib/components/Header.svelte'
+import Footer from '$lib/components/Footer.svelte'
+import { navItems } from '$lib/config'
+import { page } from "$app/stores"
+import PageTransitions from '$lib/components/PageTransitions.svelte'
 </script>
-<main class="min-h-screen">
+<div class="min-h-screen">
   <Header />
-  <slot />
+    <PageTransitions url={$page.url.pathname}>
+      <slot />
+    </PageTransitions>
   <Footer />
-</main>
+</div>
 

@@ -7,6 +7,7 @@ const nav = [
   { title: "婚姻修复", path: "/marriage" },
   { title: "免费资料", path: "/info" },
 ]
+
 </script>
 
 <header>

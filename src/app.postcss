@@ -5,6 +5,7 @@
 
 body {
   color: #333;
+  overflow-y: scroll;
 }
 p {
   margin-bottom: 1rem;
@@ -15,6 +16,17 @@ p {
   @apply bg-no-repeat bg-contain;
 }
 
+.card-pink {
+  background-image: url('/images/card-pink.svg');
+  background-size: 100% 100%;
+  @apply bg-no-repeat p-8;
+}
+
+.card-indigo {
+  background-image: url('/images/card-indigo.svg');
+  background-size: 100% 100%;
+  @apply bg-no-repeat p-8;
+}
 
 .splide__pagination {
   bottom: -3em;
@@ -23,6 +35,10 @@ p {
   position: absolute;
   right: 0;
   z-index: 1
+}
+
+.cases .splide__pagination {
+  bottom: -5em;
 }
 
 .splide__pagination__page {
