@@ -11,21 +11,49 @@ p {
   margin-bottom: 1rem;
 }
 
+.tabs-box {
+  background-image: url('/images/tabs-box.svg');
+  @apply bg-no-repeat bg-contain;
+}
+
 .slider-box {
   background-image: url('/images/slider-box.svg');
   @apply bg-no-repeat bg-contain;
 }
 
-.card-pink {
-  background-image: url('/images/card-pink.svg');
+.cases-box {
+  background-image: url(/images/cases-box.svg);
   background-size: 100% 100%;
-  @apply bg-no-repeat py-8;
+  @apply bg-no-repeat;
 }
 
-.card-indigo {
-  background-image: url('/images/card-indigo.svg');
+.cases-box .splide__pagination__page {
+  border: 1px solid #3b5bfb;
+}
+
+.cases-box .splide__pagination__page.is-active {
+  background: #3b5bfb;
+}
+
+.cases-box2 {
+  background-image: url(/images/cases-box2.svg);
   background-size: 100% 100%;
-  @apply bg-no-repeat py-8;
+  @apply bg-no-repeat;
+}
+
+.lessons .lesson-box {
+  background-image: url('/images/card-pink.svg');
+  background-size: 100% 100%;
+  @apply bg-no-repeat px-6 py-8;
+}
+
+.lessons .lesson-box:nth-child(even) {
+  background-image: url('/images/card-indigo.svg');
+}
+
+.lessons .lesson-box:nth-child(even) > h5,
+.lessons .lesson-box:nth-child(even) > h4 {
+  @apply text-indigo-300
 }
 
 .splide__pagination {

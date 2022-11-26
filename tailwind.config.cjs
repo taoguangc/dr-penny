@@ -23,6 +23,7 @@ const config = {
         indigo: {
           300: '#8fa7ff',
           400: '#6f87ff',
+          600: '#3b5bfb',
         },
       },
       lineHeight: {
