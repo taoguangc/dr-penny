@@ -18,6 +18,15 @@ const studys = [
     <title>婚姻修复</title>
 </svelte:head>
 
+<section class="py-20 bg-cover bg-no-repeat" style="background-image: url(/images/marriage-bg.webp);">
+  <div class="container mx-auto flex lg:flex-row h-[32rem]">
+    <div class="flex-1">
+      <img src="/images/marriage-heart.webp" alt="">
+    </div>
+    <div class="flex-1"></div>  
+  </div>
+</section>
+
 <section class="py-20">
   <div class="container mx-auto text-xl leading-extra-loose">
     <div class="flex justify-center mb-20">
