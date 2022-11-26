@@ -238,6 +238,21 @@ const studys = [
   </div>
 </section>
 
+<section class="py-20">
+  <div class="container mx-auto flex flex-col items-center">
+    <h2><img src="/images/experience-title.svg" alt=""></h2>
+    <h3 class="text-3xl text-indigo-600 mt-8 mb-12">我能先试试吗？</h3>
+    <div class="flex lg:flex-row space-x-8">
+      <div class="flex-1">
+        <img src="/images/experience-lesson.svg" alt="">
+      </div>
+      <div class="flex-1">
+        <img src="/images/experience-weixin.svg" alt="">
+      </div>
+    </div>
+  </div>
+</section>
+
 <style>
 .step {
   background-image: url(/images/step-box.svg);

@@ -201,7 +201,7 @@ const studys = [
     <div class="grid place-items-center">
       <h2 class="text-3xl lg:text-5xl font-bold my-16">成功案例</h2>
     </div>
-    <div class="m-4 p-8 lg:px-20 lg:py-16 cases-box">
+    <div class="m-4 p-8 lg:px-20 lg:py-16 cases-box2">
     <Splide class="cases" aria-label="Dr.Penny" options={{
       arrows: false,
     }}

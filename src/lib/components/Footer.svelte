@@ -9,7 +9,7 @@
         <ul class="text-white leading-10 ">
           <li><a href="/healing">个人治愈</a></li>
           <li><a href="/marriage">婚姻提升</a></li>
-          <li><a href="/information">免费资料</a></li>
+          <li><a href="/info">免费资料</a></li>
           <li><a href="/contact">联系我们</a></li>
         </ul>
       </div>
