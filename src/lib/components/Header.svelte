@@ -39,7 +39,7 @@ function toggle() {
     </nav>
     <!--Mobile menu-->
     <nav>
-      <button type="button" on:click={toggle} class="absolute top-4 right-4 z-30" aria-controls="mobile-menu" aria-expanded="false">
+      <button type="button" on:click={toggle} class="block md:hidden absolute top-4 right-4 z-30" aria-controls="mobile-menu" aria-expanded="false">
         <span class="sr-only">Open main menu</span>
         <svg class="h-8 w-8" class:hidden={isOpen} xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="#ff5787" aria-hidden="true">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
