@@ -1,12 +1,12 @@
 <footer>
-  <section class="bg-primary py-20">
-    <div class="container mx-auto grid grid-cols-1 lg:grid-cols-3 p-8">
+  <section class="bg-primary py-12 lg:py-20">
+    <div class="container mx-auto grid grid-cols-1 lg:grid-cols-3 gap-y-6 md:gap-y-12 px-8">
       <div>
-        <img src="/images/logo-footer.svg" alt="">
+        <img src="/images/logo-footer.svg" alt="" class="w-24">
       </div>
       <div>
-        <h3 class="text-xl tracking-wider text-white mb-8">链接</h3>
-        <ul class="text-white leading-10 ">
+        <h3 class="hidden md:block text-xl tracking-wider text-white mb-8">链接</h3>
+        <ul class="text-white leading-10 flex flex-row md:flex-col space-x-4">
           <li><a href="/healing">个人治愈</a></li>
           <li><a href="/marriage">婚姻提升</a></li>
           <li><a href="/info">免费资料</a></li>
@@ -14,7 +14,7 @@
         </ul>
       </div>
       <div>
-        <h3 class="text-xl tracking-wider text-white mb-8">关注我们</h3>
+        <h3 class="hidden md:block text-xl tracking-wider text-white mb-8">关注我们</h3>
         <ul class="flex space-x-8">
           <li>
             <svg width="27" height="23" viewBox="0 0 27 23" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -48,7 +48,7 @@
   </section>
   <section>
     <div class="container mx-auto flex justify-center pt-6 py-10">
-      <h4 class="text-primary">@ 2022 COPYRIGHT, ALL RIGHT RESERVED</h4>
+      <h4 class="text-sm md:text-xl text-primary">@ 2022 COPYRIGHT, ALL RIGHT RESERVED</h4>
     </div>
   </section>
   

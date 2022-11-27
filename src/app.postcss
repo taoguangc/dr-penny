@@ -11,6 +11,10 @@ p {
   margin-bottom: 1rem;
 }
 
+::marker {
+  text-transform: -5px;
+}
+
 .tabs-box {
   background-image: url('/images/tabs-box.svg');
   @apply bg-no-repeat bg-contain;
@@ -18,7 +22,8 @@ p {
 
 .slider-box {
   background-image: url('/images/slider-box.svg');
-  @apply bg-no-repeat bg-contain;
+  background-size: 100% 100%;
+  @apply bg-no-repeat;
 }
 
 .cases-box {
