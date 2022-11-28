@@ -27,9 +27,15 @@ p {
 }
 
 .cases-box {
-  background-image: url(/images/cases-box.svg);
-  background-size: 100% 100%;
-  @apply bg-no-repeat;
+  background-image: none;
+  @apply border border-indigo-400 bg-white;
+}
+@media (min-width: 768px) {
+  .cases-box {
+    background-image: url(/images/cases-box.svg);
+    background-size: 100% 100%;
+    @apply bg-no-repeat border-0 bg-transparent;
+  }
 }
 
 .cases-box .splide__pagination__page {
@@ -41,9 +47,15 @@ p {
 }
 
 .cases-box2 {
-  background-image: url(/images/cases-box2.svg);
-  background-size: 100% 100%;
-  @apply bg-no-repeat;
+  background-image: none;
+  @apply border border-primary bg-white;
+}
+@media (min-width: 768px) {
+  .cases-box2 {
+    background-image: url(/images/cases-box2.svg);
+    background-size: 100% 100%;
+    @apply bg-no-repeat border-0 bg-transparent;
+  }
 }
 
 .lessons .lesson-box {
@@ -71,7 +83,7 @@ p {
 }
 
 .cases .splide__pagination {
-  bottom: -5em;
+  bottom: -4em;
 }
 
 .splide__pagination__page {

@@ -17,7 +17,7 @@ function toggle() {
 </script>
 
 <header>
-  <div class="container mx-auto flex lg:flex-row justify-between py-4 sm:py-0 relative">
+  <div class="container mx-auto flex md:flex-row justify-between py-4 md:py-0 relative">
     <img src="/images/logo-penny.svg" alt="Dr.Penny">
     <!--Desktop menu-->
     <nav class="grow hidden md:flex md:flex-row md:pt-5">
@@ -39,7 +39,7 @@ function toggle() {
     </nav>
     <!--Mobile menu-->
     <nav>
-      <button type="button" on:click={toggle} class="block md:hidden absolute top-4 right-4 z-30" aria-controls="mobile-menu" aria-expanded="false">
+      <button type="button" on:click={toggle} class="block md:hidden absolute top-4 right-4 z-40" aria-controls="mobile-menu" aria-expanded="false">
         <span class="sr-only">Open main menu</span>
         <svg class="h-8 w-8" class:hidden={isOpen} xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="#ff5787" aria-hidden="true">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
@@ -48,11 +48,13 @@ function toggle() {
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
         </svg>
       </button>
-      <div class:hidden={!isOpen} class="h-screen absolute z-20 top-0 right-0 text-lg bg-secondary shadow-lg">
+      <div on:click={toggle} class:hidden={!isOpen} class="w-full h-screen fixed inset-0 z-20 opacity-50 bg-black"></div>
+      <div class:hidden={!isOpen} class="h-screen absolute z-30 top-0 right-0 text-lg bg-secondary shadow-lg">
         <ul class="pt-16">
           {#each nav as item}
           <li class="px-12 py-4 {$page.url.pathname === item.path ? "bg-white" : ""}"><a href={item.path}>{item.title}</a></li>
           {/each}
+          <li class="px-12 py-4"><a href="/contact">联系我们</a></li>
         </ul>
       </div>
       
