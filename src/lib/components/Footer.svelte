@@ -1,16 +1,16 @@
 <footer>
   <section class="bg-primary py-12 lg:py-20">
-    <div class="container mx-auto grid grid-cols-1 lg:grid-cols-3 gap-y-6 md:gap-y-12 px-8">
+    <div class="container mx-auto grid grid-cols-1 lg:grid-cols-3 gap-y-8 md:gap-y-12 px-8">
       <div>
         <img src="/images/logo-footer.svg" alt="" class="w-24">
       </div>
       <div>
         <h3 class="hidden md:block text-xl tracking-wider text-white mb-8">链接</h3>
-        <ul class="text-white leading-10 flex flex-row md:flex-col space-x-4">
-          <li><a href="/healing">个人治愈</a></li>
-          <li><a href="/marriage">婚姻提升</a></li>
-          <li><a href="/info">免费资料</a></li>
-          <li><a href="/contact">联系我们</a></li>
+        <ul class="text-white leading-10 flex flex-row flex-wrap md:flex-col md:space-x-4">
+          <li class="basis-1/2"><a href="/healing">个人治愈</a></li>
+          <li class="basis-1/2"><a href="/marriage">婚姻提升</a></li>
+          <li class="basis-1/2"><a href="/info">免费资料</a></li>
+          <li class="basis-1/2"><a href="/contact">联系我们</a></li>
         </ul>
       </div>
       <div>

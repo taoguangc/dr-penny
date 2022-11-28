@@ -62,7 +62,7 @@ const solves = [
 </section>
 
 <section class="py-8 sm:py-20">
-  <div class="container mx-auto text-2xl leading-loose">
+  <div class="container mx-auto px-4 md:px-16 text-2xl leading-loose">
     <div class="flex flex-col text-center mb-8 sm:mb-20">
       <h2 class="text-primary text-xl font-semibold sm:text-3xl ml-16 pt-2 pb-4 pr-16 bg-contain bg-no-repeat bg-center do-title">我们可以做什么</h2>
     </div>
@@ -137,8 +137,8 @@ const solves = [
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-0 text-2xl">
       {#each solutions as { id, title, details }}
       <div class="card m-4 px-6 py-4 md:p-12">
-        <h3 class="font-bold text-xl md:text-3xl lg:text-5xl mb-2 sm:mb-4">0{id}</h3>
-        <h3 class="font-semibold text-xl lg:text-4xl tracking-wide mb-4 sm:mb-8">{title}</h3>
+        <h3 class="font-bold text-xl md:text-3xl lg:text-5xl mb-0 sm:mb-4">0{id}</h3>
+        <h3 class="font-semibold text-xl lg:text-4xl tracking-wide mb-2 sm:mb-8">{title}</h3>
         <ol class="list-decimal list-inside text-sm md:text-xl leading-loose md:leading-loose">
           {#each details as detail}
           <li>{detail}</li>
