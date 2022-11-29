@@ -3,7 +3,8 @@ import { Splide, SplideSlide } from '@splidejs/svelte-splide'
 import '@splidejs/svelte-splide/css/core'
 
 import { Tabs, TabList, TabPanel, Tab } from '$lib/tabs'
-import Lessons from '$lib/components/Lessons.svelte'
+// import Lessons from '$lib/components/Lessons.svelte'
+import { modules } from '$lib/data/modules.json'
 
 const steps = [
   {img: '/images/step-1.jpg', title: '第一步: 治愈小时候的负面阴影', content: '无论因为校园经历，还是原生家庭，都需要先从你的潜意识里，走出你小时候的负面经历，让你能对特定人际关系“脱敏”。'},
@@ -65,36 +66,41 @@ const studys = [
     <div class="grid place-items-center">
       <h2 class="text-xl md:text-3xl lg:text-5xl font-bold my-4 md:my-16">爱自己自信私教项目内容</h2>
     </div>
-    <div class="m-2 md:m-4 p-0 md:p-8 lg:px-20 lg:py-16 tabs-box aspect-[3/2]">
+    <div class="m-2 md:m-4 p-0 md:p-8 lg:p-16 tabs-box aspect-[3/2]">
       <Tabs>
         <TabList>
-          <Tab>1</Tab>
-          <Tab>2</Tab>
-          <Tab>3</Tab>
+          {#each modules as { id }}
+          <Tab>{id}</Tab>
+          {/each}
         </TabList>
-
+        {#each modules as { id, title, subtitle, homeworks, lessons }}
         <TabPanel>
-          <div class="flex flex-col p-8">
-            <h3 class="text-4xl font-semibold mb-2">Module 1</h3>
-            <hr class="w-24 h-2 mb-10 bg-indigo-300" />
-            <h3 class="text-3xl font-semibold mb-4">掌握亲密关系中爱与依恋的作用</h3>
-            <h4 class="text-lg mb-12">目标：掌握爱的科学理论，婚姻进步的基础！</h4>
+          <div class="flex flex-col p-2">
+            <h3 class="text-xl md:text-4xl font-semibold mb-2">Module {id}</h3>
+            <hr class="w-24 h-2 mb-4 md:mb-8 bg-indigo-300" />
+            <h3 class="text-lg md:text-3xl font-semibold md-0 md:mb-2">{title}</h3>
+            <h4 class="text-sm md:text-lg mb-4 md:mb-12">{subtitle}</h4>
             <div class="flex flex-col md:flex-row space-x-0 md:space-x-4 lessons">
-              <Lessons />  
+              {#each lessons as { id, icon, title, content} }
+              <div class="flex-1 flex flex-row md:flex-col items-start md:items-center lesson-box p-4 md:py-6 mb-4 relative">
+                <div class="flex flex-col-reverse md:flex-col items-center mr-6 md:mr-0">
+                  <h5 class="text-xs md:text-lg text-primary font-semibold md:mb-4">Lesson{id}</h5>
+                  <div class="w-8 flex justify-center">{@html icon}</div>
+                </div>
+                <div class="flex flex-col justify-start">
+                  <h4 class="text-base md:text-xl font-semibold text-primary md:text-center my-2 md:mb-16">{title}</h4>
+                  <h6 class="text-sm md:text-center md:absolute md:bottom-8 md:left-4 md:right-4">{content}</h6>
+                </div>
+              </div>
+              {/each}
             </div>
             <h4 class="pt-8 pb-4 text-xl font-semibold">课后练习：</h4>
-            <h5 class="text-base leading-loose">提交1-3讲课后练习，获得8分钟语音反馈</h5>
-            <h5 class="text-base">提交4-5讲课后练习，获得8分钟语音反馈</h5>
+            {#each homeworks as homework}
+            <h5 class="text-base leading-loose">{homework}</h5>
+            {/each}
           </div>
         </TabPanel>
-
-        <TabPanel>
-          <h2>Second panel</h2>
-        </TabPanel>
-
-        <TabPanel>
-          <h2>Third panel</h2>
-        </TabPanel>
+        {/each}
       </Tabs>
     </div>
   </div>

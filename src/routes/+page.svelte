@@ -171,7 +171,7 @@ const solves = [
                   <h5 class="text-base">爱自己自信私教项目</h5>
                 </div>
               </div>
-              <p class="text-base leading-loose sm:text-2xl">不管好与不好多可以接纳自己，暂停负面解读外在的世界，可以允许自己展示自己，最后到达看到自己的好并感谢自己。让女性们更坚信去做自己的选择，更好的与人相处，更勇敢的去展示自己的魅力和表达自己的想法和观点。</p>
+              <p class="text-base md:text-2xl leading-loose md:leading-[1.75]">不管好与不好多可以接纳自己，暂停负面解读外在的世界，可以允许自己展示自己，最后到达看到自己的好并感谢自己。让女性们更坚信去做自己的选择，更好的与人相处，更勇敢的去展示自己的魅力和表达自己的想法和观点。</p>
             </div>
           </div>
         </SplideSlide>
@@ -188,7 +188,7 @@ const solves = [
                   <h5 class="text-base">爱自己自信私教项目</h5>
                 </div>
               </div>
-              <p class="text-base leading-loose sm:text-2xl">不管好与不好多可以接纳自己，暂停负面解读外在的世界，可以允许自己展示自己，最后到达看到自己的好并感谢自己。让女性们更坚信去做自己的选择，更好的与人相处，更勇敢的去展示自己的魅力和表达自己的想法和观点。</p>
+              <p class="text-base sm:text-2xl leading-loose md:leading-[1.75]">不管好与不好多可以接纳自己，暂停负面解读外在的世界，可以允许自己展示自己，最后到达看到自己的好并感谢自己。让女性们更坚信去做自己的选择，更好的与人相处，更勇敢的去展示自己的魅力和表达自己的想法和观点。</p>
             </div>
           </div>
         </SplideSlide>

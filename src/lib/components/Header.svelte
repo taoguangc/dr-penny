@@ -9,6 +9,7 @@ const nav = [
 ]
 
 let isOpen = false
+let popOpen = false
 
 function toggle() {
   isOpen = !isOpen
@@ -34,7 +35,12 @@ function toggle() {
           <path d="M3.42859 28.5714H14.8572V17.1428H3.42859V28.5714V28.5714ZM5.71431 19.4286H12.5715V26.2857H5.71431V19.4286ZM21.7143 8H24V10.2857H21.7143V8Z" fill="#3F3F3F"/>
           <path d="M17.1429 3.42856V14.8572H28.5714V3.42856H17.1428H17.1429ZM26.2857 12.5714H19.4286V5.71428H26.2857V12.5714Z" fill="#3F3F3F"/>
         </svg>
-        <a href="/contact" class="ml-4">联系我们</a>
+        <a href={null} on:click={()=>(popOpen=!popOpen)} class="ml-4">联系我们</a>
+      </div>
+      <div class:block={popOpen} class="hidden absolute top-0 right-0">
+        <h3>扫一扫二维码</h3>
+        <h3>添加Dr.Penny微信</h3>
+        <img src="/images/qr-code.svg" alt="微信二维码">
       </div>
     </nav>
     <!--Mobile menu-->
