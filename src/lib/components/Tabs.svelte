@@ -45,6 +45,6 @@
 	})
 </script>
 
-<div class="relative">
+<div class="mt-12 md:mt-0 relative">
 	<slot></slot>
 </div>
