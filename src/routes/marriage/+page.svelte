@@ -90,28 +90,28 @@ const studys = [
     <div class="m-2 md:m-4 p-0 md:p-8 lg:p-16 tabs-box aspect-[3/2]">
       <Tabs>
         <TabList>
-          {#each weeks as { id }}
-          <Tab>{id}</Tab>
+          {#each weeks as week, index}
+          <Tab>{index+1}</Tab>
           {/each}
         </TabList>
-        {#each weeks as { id, title, subtitle, homeworks, lessons }}
+        {#each weeks as { title, subtitle, homeworks, lessons }, index}
         <TabPanel>
           <div class="flex flex-col p-3 pb-6 md:pb-0">
             <div class="ml-4 md:ml-0 mt-8 md:mt-0">
-              <h3 class="text-lg md:text-4xl font-semibold mb-2">Module {id}</h3>
+              <h3 class="text-lg md:text-4xl font-semibold mb-2">Module {index+1}</h3>
               <hr class="w-16 md:w-24 h-1 md:h-2 mb-4 md:mb-8 bg-indigo-300" />
               <h3 class="text-lg md:text-3xl font-semibold md-0 md:mb-2">{title}</h3>
               <h4 class="text-sm md:text-lg mb-4 md:mb-12">{subtitle}</h4>
             </div>
             <div class="flex flex-col md:flex-row space-x-0 md:space-x-4 lessons">
-              {#each lessons as { id, icon, title, content} }
+              {#each lessons as { icon, title, content}, index }
               <div class="flex-1 flex flex-row md:flex-col items-start md:items-center lesson-box p-4 md:py-6 mb-4 relative">
                 <div class="flex flex-col-reverse md:flex-col items-center mr-6 md:mr-0">
-                  <h5 class="text-xs md:text-lg text-primary font-semibold md:mb-4">Lesson{id}</h5>
+                  <h5 class="{index % 2 === 0 ? 'text-primary' : 'text-indigo-600'} text-xs md:text-lg font-semibold md:mb-4">Lesson{index+1}</h5>
                   <div class="w-8 flex justify-center">{@html icon}</div>
                 </div>
                 <div class="flex flex-col justify-start">
-                  <h4 class="text-base md:text-xl font-semibold text-primary md:text-center my-2 md:mb-16">{title}</h4>
+                  <h4 class="{index % 2 === 0 ? 'text-primary' : 'text-indigo-600'} text-base md:text-xl font-semibold md:text-center my-2 md:mb-16">{title}</h4>
                   <h6 class="text-sm md:text-center md:absolute md:bottom-8 md:left-4 md:right-4">{content}</h6>
                 </div>
               </div>
