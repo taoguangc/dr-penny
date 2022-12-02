@@ -6,7 +6,7 @@
       </div>
       <div>
         <h3 class="hidden md:block text-xl tracking-wider text-white mb-8">链接</h3>
-        <ul class="text-white leading-10 flex flex-row flex-wrap md:flex-col md:space-x-4">
+        <ul class="text-white leading-10 flex flex-row flex-wrap md:flex-col">
           <li class="basis-1/2"><a href="/healing">个人治愈</a></li>
           <li class="basis-1/2"><a href="/marriage">婚姻提升</a></li>
           <li class="basis-1/2"><a href="/info">免费资料</a></li>

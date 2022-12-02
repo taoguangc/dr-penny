@@ -28,7 +28,7 @@ function toggle() {
         {/each}
       </ul>
       <div class="grow text-[1.3rem] flex flex-row justify-end items-center">
-        <a href="#" on:click={()=>(popOpen=!popOpen)} class="py-3 flex flex-row border-transparent hover:border-primary border-b-4">
+        <a href={null} on:click={()=>(popOpen=!popOpen)} class="py-3 flex flex-row border-transparent hover:border-primary border-b-4 hover:cursor-pointer">
           <svg class="mr-4" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect width="32" height="32" fill="white"/>
             <path d="M8 8H10.2857V10.2857H8V8ZM26.2857 26.2857H28.5714V28.5714H26.2857V26.2857ZM26.2857 21.7143H24V17.1428H17.1428V28.5714H19.4286V19.4286H21.7143V24H28.5714V17.1428H26.2857V21.7143Z" fill="#3F3F3F"/>

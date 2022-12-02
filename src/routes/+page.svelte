@@ -1,10 +1,21 @@
-<script>
+<script setup>
+import { fade } from 'svelte/transition'
 import { onMount } from 'svelte'
 import { animate, inView } from 'motion'
 import ButtonMore from '$lib/components/ButtonMore.svelte'
 
 import { Splide, SplideSlide } from '@splidejs/svelte-splide'
 import '@splidejs/svelte-splide/css/core'
+
+onMount(() => {
+  inView(".splide .is-active li", ({ target }) => {
+    animate(
+      target.querySelector("h3"),
+      { opacity: 1, transform: "none" },
+      { delay: 0.2, duration: 0.9, easing: [0.17, 0.55, 0.55, 1] }
+    )
+  })
+})
 
 const solutions = [
   { id: 1,
@@ -213,7 +224,7 @@ const solves = [
             <img src="/images/slide-1.avif" alt="">
           </div>
           <div class="lg:basis-[53.75%]">
-            <h3 class="text-base lg:text-4xl font-bold leading-normal mb-2 lg:mb-4">婚姻&家庭</h3>
+            <h3 transition:fade class="text-base lg:text-4xl font-bold leading-normal mb-2 lg:mb-4">婚姻&家庭</h3>
             <h3 class="text-base lg:text-4xl font-bold leading-normal mb-2 lg:mb-12">心理咨询专业博士</h3>
             <p class="leading-loose">Penny博士在美国康萨斯州立大学(Kanas state University)获得了博士学位, 这在国内心理咨询师专业水平参差不齐的大环境下, 可以算是专业实力的最强认证.</p>
           </div>
