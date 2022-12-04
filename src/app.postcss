@@ -126,3 +126,38 @@ p {
   outline: 3px solid #0bf;
   outline-offset: 3px
 }
+
+
+.splide .splide__slide h3,
+.splide .splide__slide h4,
+.splide .splide__slide h5,
+.splide .splide__slide p {
+  opacity: 0;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in-out;
+  transform: translateY(-20%);
+}
+.splide .splide__slide h3:nth-child(2),
+.splide .splide__slide h5 {
+  transition-delay: 0.2s;
+}
+.splide  .splide__slide p {
+  transition-delay: 0.4s;
+}
+
+.splide .splide__slide > .flex > div:nth-child(1),
+.splide .splide__slide .flex .flex-shrink {
+  opacity: 0;
+  transition-duration: 0.1s;
+  transition-timing-function: ease-in-out;
+}
+
+.splide .splide__slide.is-active h3,
+.splide .splide__slide.is-active h4,
+.splide .splide__slide.is-active h5,
+.splide .splide__slide.is-active > .flex > div:nth-child(1),
+.splide .splide__slide.is-active .flex .flex-shrink,
+.splide .splide__slide.is-active p {
+  opacity: 1;
+  transform: translateY(0%);
+}

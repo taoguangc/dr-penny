@@ -231,4 +231,5 @@ const studys = [
 .slove-box:nth-child(even) {
   background-image: url(/images/slove-box-blue.svg);
 }
+
 </style>
