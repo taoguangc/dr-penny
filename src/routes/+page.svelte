@@ -130,13 +130,13 @@ const solves = [
     </div>
     <div class="flex-1">
       <ul class="list-disc list-inside">
-        <li class="w-[20rem] lg:w-[32rem] mb-8 pl-3 py-1 bg-[#c7dfff]">婚姻和家庭心理咨询博士学位</li>
-        <li class="w-[20rem] lg:w-[32rem] ml-8 lg:ml-20 mb-8 pl-3 py-1 bg-[#ffd3e3]">美国认证的婚姻和家庭心理咨询师</li>
-        <li class="w-[20rem] lg:w-[32rem] mb-8 pl-3 py-1 bg-[#F3e7cf]">美国普渡大学全职咨询师</li>
-        <li class="w-[20rem] lg:w-[32rem] ml-8 lg:ml-20 mb-8 pl-3 py-1 bg-[#c7dfff]">ICEEFT国际认证的EFT情绪取向咨询师</li>
-        <li class="w-[20rem] lg:w-[32rem] mb-8 pl-3 py-1 bg-[#ffd3e3]">曾就职于美国精神医院</li>
-        <li class="w-[20rem] lg:w-[32rem] ml-8 lg:ml-20 mb-8 pl-3 py-1 bg-[#F3e7cf]">成立杜克昆山大学心理咨询室(苏州昆山)</li>
-        <li class="w-[20rem] lg:w-[32rem] pl-3 py-1 bg-[#c7dfff]">从业时间10年</li>
+        <li class="w-[20rem] md:w-[32rem] mb-4 md:mb-8 pl-3 py-1 md:py-2 bg-[#c7dfff]">婚姻和家庭心理咨询博士学位</li>
+        <li class="w-[20rem] md:w-[32rem] mb-4 md:mb-8 ml-8 md:ml-20 pl-3 py-1 md:py-2 bg-[#ffd3e3]">美国认证的婚姻和家庭心理咨询师</li>
+        <li class="w-[20rem] md:w-[32rem] mb-4 md:mb-8 pl-3 py-1 md:py-2 bg-[#F3e7cf]">美国普渡大学全职咨询师</li>
+        <li class="w-[20rem] md:w-[32rem] mb-4 md:mb-8 ml-8 md:ml-20 pl-3 py-1 md:py-2 bg-[#c7dfff]">ICEEFT国际认证的EFT情绪取向咨询师</li>
+        <li class="w-[20rem] md:w-[32rem] mb-4 md:mb-8 pl-3 py-1 md:py-2 bg-[#ffd3e3]">曾就职于美国精神医院</li>
+        <li class="w-[20rem] md:w-[32rem] mb-4 md:mb-8 ml-8 md:ml-20 pl-3 py-1 md:py-2 bg-[#F3e7cf]">成立杜克昆山大学心理咨询室(苏州昆山)</li>
+        <li class="w-[20rem] md:w-[32rem] pl-3 py-1 md:py-2 bg-[#c7dfff]">从业时间10年</li>
       </ul>
     </div>
   </div>
@@ -171,7 +171,7 @@ const solves = [
       }}>
         <SplideSlide>
           <div class="flex flex-col-reverse sm:flex-row gap-x-16">
-            <div class="basis-5/12"><img src="/images/story-1.jpg" alt="Story 1" class="rounded-2xl" /></div>
+            <div class="basis-5/12 mt-4 md:mt-0"><img src="/images/story-1.jpg" alt="Story 1" class="rounded-2xl" /></div>
             <div class="basis-7/12">
               <div class="flex flex-row gap-x-4 items-center mb-4 sm:mb-8">
                 <div class="flex-shrink">
@@ -188,7 +188,7 @@ const solves = [
         </SplideSlide>
         <SplideSlide>
           <div class="flex flex-col-reverse sm:flex-row gap-x-16">
-            <div class="basis-5/12"><img src="/images/story-1.jpg" alt="Story 1" class="rounded-2xl" /></div>
+            <div class="basis-5/12 mt-4 md:mt-0"><img src="/images/story-1.jpg" alt="Story 1" class="rounded-2xl" /></div>
             <div class="basis-7/12">
               <div class="flex flex-row gap-x-4 items-center mb-4 sm:mb-8">
                 <div class="flex-shrink">

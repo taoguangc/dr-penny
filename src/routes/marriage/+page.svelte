@@ -19,12 +19,12 @@ const studys = [
   <title>婚姻修复</title>
 </svelte:head>
 
-<section class="py-20 bg-[-48rem] md:bg-center md:bg-cover md:bg-no-repeat" style="background-image: url(/images/marriage-bg.webp);">
+<section class="py-20 bg-bottom md:bg-center md:bg-cover md:bg-no-repeat marriage-bg">
   <div class="container mx-auto flex flex-col md:flex-row h-96 md:h-[32rem]">
     <div class="flex-1 relative">
       <img src="/images/marriage-heart.webp" alt="">
       <div class="absolute top-16 lg:top-20 xl:top-28 left-0 right-0 flex flex-col items-center">
-        <h2 class="text-xl md:text-4xl font-semibold text-primary mr-6 mb-2 md:mb-4">婚姻私教项目</h2>
+        <h2 class="text-xl md:text-4xl font-semibold text-primary mr-6 mb-2 md:mb-6">婚姻私教项目</h2>
         <ol class="list-decimal text-xs md:text-base leading-relaxed md:leading-loose text-primary">
           <li><strong>表达</strong>内在的需求，</li>
           <li>共情<strong>回应</strong>彼此，</li>
@@ -32,7 +32,7 @@ const studys = [
           <li><strong>放下</strong>过去的创伤，</li>
           <li>正面的<strong>经营</strong>婚姻</li>
         </ol>
-        <botton class="mt-32 md:mt-4 mr-0 md:mr-16 px-8 py-2 rounded-full border border-primary text-white bg-primary text-center text-sm md:text-xl">购买项目</botton>
+        <botton class="mt-36 md:mt-4 mr-0 md:mr-16 px-12 md:px-8 py-2 rounded-full border border-primary text-white bg-primary text-center text-base md:text-xl">购买项目</botton>
       </div>
     </div>
     <div class="flex-1"></div>  
@@ -223,6 +223,15 @@ const studys = [
 </section>
 
 <style>
+.marriage-bg {
+  background-image: url(/images/marriage-bg.avif);
+}
+@media (min-width: 768px) {
+  .marriage-bg {
+    background-image: url(/images/marriage-bg.webp);
+  }
+}
+
 .slove-box {
   background-image: url(/images/slove-box-red.svg);
   background-size: 100% 100%;
