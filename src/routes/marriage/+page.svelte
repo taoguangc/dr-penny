@@ -5,7 +5,7 @@ import '@splidejs/svelte-splide/css/core'
 import { Tabs, TabList, TabPanel, Tab } from '$lib/tabs'
 import { weeks } from '$lib/data/weeks.json'
 
-const studys = [
+const studies = [
   {title: '看', content: '6个模块线上<strong>视频课程</strong>,可无限使用(可先单独学习或者二个人一起学习)'},
   {title: '学', content: '<strong>12周</strong>项目，2周完成一个模块, 3个月完成整个项目。'},
   {title: '练', content: '每周花<strong>1-2个小时学习</strong>，完成课后练习。'},
@@ -133,7 +133,7 @@ const studys = [
   <div class="container mx-auto px-4 md:px-16 leading-loose">
     <h2 class="text-center text-xl md:text-3xl lg:text-5xl font-semibold tracking-wide my-4 md:my-16">学习和进步形式</h2>
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 md:gap-x-32 md:gap-y-16 p-2 md:p-8 text-2xl">
-      {#each studys as study}
+      {#each studies as study}
       <div class="flex flex-row items-center gap-3 md:gap-8">
         <div class="relative">
           <h3 class="absolute z-10 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-primary text-lg md:text-4xl font-semibold">{study.title}</h3>

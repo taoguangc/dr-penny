@@ -2,20 +2,12 @@
 import { fade } from 'svelte/transition'
 import { onMount } from 'svelte'
 import { animate, inView } from 'motion'
+import { isModalOpen } from '$lib/stores/ModalStore'
 import ButtonMore from '$lib/components/ButtonMore.svelte'
+import Modal from '$lib/components/Modal.svelte'
 
 import { Splide, SplideSlide } from '@splidejs/svelte-splide'
 import '@splidejs/svelte-splide/css/core'
-
-onMount(() => {
-  inView(".splide .is-active li", ({ target }) => {
-    animate(
-      target.querySelector("h3"),
-      { opacity: 1, transform: "none" },
-      { delay: 0.2, duration: 0.9, easing: [0.17, 0.55, 0.55, 1] }
-    )
-  })
-})
 
 const solutions = [
   { id: 1,
@@ -63,7 +55,45 @@ const solves = [
   "性生活不和谐",
   "原生家庭创伤",
 ]
+
+const stories = [
+  {
+    image: "/images/story-1.jpg",
+    video: "/images/video.mp4",
+    avatar: "/images/avatar-1.jpg",
+    name: "小丹",
+    title: "爱自己自信私教项目",
+    content: "不管好与不好多可以接纳自己，暂停负面解读外在的世界，可以允许自己展示自己，最后到达看到自己的好并感谢自己。让女性们更坚信去做自己的选择，更好的与人相处，更勇敢的去展示自己的魅力和表达自己的想法和观点。",
+  },
+  {
+    image: "/images/story-1.jpg",
+    video: "/images/video.mp4",
+    avatar: "/images/avatar-1.jpg",
+    name: "小丹",
+    title: "爱自己自信私教项目",
+    content: "不管好与不好多可以接纳自己，暂停负面解读外在的世界，可以允许自己展示自己，最后到达看到自己的好并感谢自己。让女性们更坚信去做自己的选择，更好的与人相处，更勇敢的去展示自己的魅力和表达自己的想法和观点。",
+  },
+  {
+    image: "/images/story-1.jpg",
+    video: "/images/12345.mp4",
+    avatar: "/images/avatar-1.jpg",
+    name: "小丹",
+    title: "爱自己自信私教项目",
+    content: "不管好与不好多可以接纳自己，暂停负面解读外在的世界，可以允许自己展示自己，最后到达看到自己的好并感谢自己。让女性们更坚信去做自己的选择，更好的与人相处，更勇敢的去展示自己的魅力和表达自己的想法和观点。",
+  }
+]
+
+let video=null
+function openModal(e) {
+  isModalOpen.set(true)
+  video=e
+}
+
 </script>
+
+<svelte:head>
+  <title>DrPenny</title>
+</svelte:head>
 
 <section class="bg-[#ffdfdf] bg-no-repeat bg-center bg-[length:auto_100%]" style="background-image: url(/images/hero-bg.svg)">
   <div class="container mx-auto pt-4 pb-6 text-2xl leading-loose relative">
@@ -165,44 +195,34 @@ const solves = [
 <section class="py-6 sm:py-20">
   <div class="container mx-auto">
     <h2 class="text-center text-2xl lg:text-5xl font-semibold tracking-wide my-6 sm:my-16">我们来访的故事</h2>
+
+    <Modal {video} />
+
     <div class="mb-16">
-      <Splide aria-label="My Favorite Images" options={{
+      <Splide aria-label="My Stories" options={{
         arrows: false,
       }}>
+      {#each stories as story}
         <SplideSlide>
           <div class="flex flex-col-reverse sm:flex-row gap-x-16">
-            <div class="basis-5/12 mt-4 md:mt-0"><img src="/images/story-1.jpg" alt="Story 1" class="rounded-2xl" /></div>
+            <div class="basis-5/12 mt-4 md:mt-0">
+              <a href={null} on:click|preventDefault={() => {openModal(story.video)}}><img src={story.image} alt="Story 1" class="rounded-2xl" /></a>
+            </div>
             <div class="basis-7/12">
               <div class="flex flex-row gap-x-4 items-center mb-4 sm:mb-8">
                 <div class="flex-shrink">
-                  <img src="/images/avatar-1.jpg" alt="Avatar 1" class="rounded-full" />
+                  <img src={story.avatar} alt="Avatar 1" class="rounded-full" />
                 </div>
                 <div class="flex flex-col">
-                  <h4 class="text-2xl font-bold">小丹</h4>
-                  <h5 class="text-base">爱自己自信私教项目</h5>
+                  <h4 class="text-2xl font-bold">{story.name}</h4>
+                  <h5 class="text-base">{story.title}</h5>
                 </div>
               </div>
-              <p class="text-base md:text-2xl leading-loose md:leading-[1.75]">不管好与不好多可以接纳自己，暂停负面解读外在的世界，可以允许自己展示自己，最后到达看到自己的好并感谢自己。让女性们更坚信去做自己的选择，更好的与人相处，更勇敢的去展示自己的魅力和表达自己的想法和观点。</p>
+              <p class="text-base md:text-2xl leading-loose md:leading-[1.75]">{story.content}</p>
             </div>
           </div>
         </SplideSlide>
-        <SplideSlide>
-          <div class="flex flex-col-reverse sm:flex-row gap-x-16">
-            <div class="basis-5/12 mt-4 md:mt-0"><img src="/images/story-1.jpg" alt="Story 1" class="rounded-2xl" /></div>
-            <div class="basis-7/12">
-              <div class="flex flex-row gap-x-4 items-center mb-4 sm:mb-8">
-                <div class="flex-shrink">
-                  <img src="/images/avatar-1.jpg" alt="Avatar 1" class="rounded-full" />
-                </div>
-                <div class="flex flex-col">
-                  <h4 class="text-2xl font-bold">小丹</h4>
-                  <h5 class="text-base">爱自己自信私教项目</h5>
-                </div>
-              </div>
-              <p class="text-base sm:text-2xl leading-loose md:leading-[1.75]">不管好与不好多可以接纳自己，暂停负面解读外在的世界，可以允许自己展示自己，最后到达看到自己的好并感谢自己。让女性们更坚信去做自己的选择，更好的与人相处，更勇敢的去展示自己的魅力和表达自己的想法和观点。</p>
-            </div>
-          </div>
-        </SplideSlide>
+      {/each}
       </Splide>
     </div>
   </div>

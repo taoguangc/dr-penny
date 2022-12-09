@@ -17,7 +17,7 @@ const steps = [
   {img: '/images/step-8.jpg', title: '第八步: 养成<span class="text-indigo-600">自信和幸福</span>的生活习惯', content: '学会把学到的高效，自信和幸福的习惯和方法应用在日常生活中，最终从内在影响到外在生活，实现你的更多人生目标。'},
 ]
 
-const studys = [
+const studies = [
   {title: '学', content: '<strong>8个模块</strong>视频课程，16周学习'},
   {title: '练', content: '<strong>8次</strong>课后练习'},
   {title: '陪', content: '获得8次Penny的<strong>语音深入指导</strong>'},
@@ -112,7 +112,7 @@ const studys = [
   <div class="container mx-auto px-4 md:px-16 leading-loose">
     <h2 class="text-center text-xl md:text-3xl lg:text-5xl font-semibold tracking-wide my-4 md:my-16">学习和进步形式</h2>
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 md:gap-x-32 md:gap-y-16 p-2 md:p-8 text-2xl">
-      {#each studys as study}
+      {#each studies as study}
       <div class="flex flex-row items-center gap-3 md:gap-8">
         <div class="relative">
           <h3 class="absolute z-10 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-indigo-600 text-lg md:text-4xl font-semibold">{study.title}</h3>
