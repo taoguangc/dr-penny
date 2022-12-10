@@ -98,7 +98,7 @@ const studies = [
         <TabPanel>
           <div class="flex flex-col p-3 pb-6 md:pb-0">
             <div class="ml-4 md:ml-0 mt-8 md:mt-0">
-              <h3 class="text-lg md:text-4xl font-semibold mb-2">Module {index+1}</h3>
+              <h3 class="text-lg md:text-4xl font-semibold mb-2">Week {index+1}</h3>
               <hr class="w-16 md:w-24 h-1 md:h-2 mb-4 md:mb-8 bg-indigo-300" />
               <h3 class="text-lg md:text-3xl font-semibold md-0 md:mb-2">{title}</h3>
               <h4 class="text-sm md:text-lg mb-4 md:mb-12">{subtitle}</h4>

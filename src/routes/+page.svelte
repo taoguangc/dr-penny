@@ -58,26 +58,18 @@ const solves = [
 
 const stories = [
   {
-    image: "/images/story-1.jpg",
-    video: "/images/video.mp4",
+    image: "/images/video-cover01.avif",
+    video: "/images/xiaodan.mp4",
     avatar: "/images/avatar-1.jpg",
     name: "小丹",
     title: "爱自己自信私教项目",
     content: "不管好与不好多可以接纳自己，暂停负面解读外在的世界，可以允许自己展示自己，最后到达看到自己的好并感谢自己。让女性们更坚信去做自己的选择，更好的与人相处，更勇敢的去展示自己的魅力和表达自己的想法和观点。",
   },
   {
-    image: "/images/story-1.jpg",
-    video: "/images/video.mp4",
+    image: "/images/video-cover02.avif",
+    video: "/images/mumuxi.mp4",
     avatar: "/images/avatar-1.jpg",
-    name: "小丹",
-    title: "爱自己自信私教项目",
-    content: "不管好与不好多可以接纳自己，暂停负面解读外在的世界，可以允许自己展示自己，最后到达看到自己的好并感谢自己。让女性们更坚信去做自己的选择，更好的与人相处，更勇敢的去展示自己的魅力和表达自己的想法和观点。",
-  },
-  {
-    image: "/images/story-1.jpg",
-    video: "/images/12345.mp4",
-    avatar: "/images/avatar-1.jpg",
-    name: "小丹",
+    name: "木木夕",
     title: "爱自己自信私教项目",
     content: "不管好与不好多可以接纳自己，暂停负面解读外在的世界，可以允许自己展示自己，最后到达看到自己的好并感谢自己。让女性们更坚信去做自己的选择，更好的与人相处，更勇敢的去展示自己的魅力和表达自己的想法和观点。",
   }
@@ -107,16 +99,16 @@ function openModal(e) {
     <div class="flex flex-col text-center mb-8 sm:mb-20">
       <h2 class="text-primary text-xl font-semibold sm:text-3xl ml-16 pt-2 pb-4 pr-16 bg-contain bg-no-repeat bg-center do-title">我们可以做什么</h2>
     </div>
-    <div class="flex flex-col sm:flex-row gap-0 sm:gap-24 do-box bg-contain bg-no-repeat aspect-[16/7] text-primary text-3xl">
+    <div class="flex flex-col sm:flex-row gap-0 xl:gap-24 do-box bg-contain bg-no-repeat aspect-[16/7] text-primary text-3xl">
       <div class="basis-[40%] flex flex-col justify-center items-center border-b sm:border-b-0 sm:mt-2 sm:mb-4 sm:border-r border-dashed border-primary">
         <h3 class="text-base sm:text-3xl font-semibold my-8 sm:mb-8">陪伴困境中的你</h3>
         <img src="/images/plight.svg" alt="陪伴困境中的你" class="w-48 sm:w-64 mb-8">
       </div>
       <div class="basis-[60%] flex flex-col justify-center py-8">
-        <h3 class="text-center sm:text-left text-base sm:text-3xl font-semibold tracking-wider mb-8 md:mt-4">帮你解决问题</h3>
-        <ul class="text-black text-sm sm:text-2xl sm:leading-[3em] ml-6 mb-8 flex flex-row flex-wrap">
+        <h3 class="text-center sm:text-left text-base sm:text-3xl font-semibold tracking-wider lg:mb-4 xl:my-6 ml-6">帮你解决问题</h3>
+        <ul class="text-black text-sm sm:text-2xl lg:leading-loose xl:leading-[3em] ml-6 mb-8 flex flex-row flex-wrap">
           {#each solves as slave}
-          <li class="w-36 sm:w-64 mb-4 flex flex-row items-center">
+          <li class="w-36 sm:w-64 xl:mb-4 flex flex-row items-center">
             <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 md:w-8 md:h-9 mr-4">
             <rect x="0.5" y="0.947998" width="27" height="27" fill="white" stroke="#FF5685"/>
             <path d="M4 14.2266L11 21.448L24 7.448" stroke="#FF5685" stroke-width="2"/>
@@ -178,9 +170,9 @@ function openModal(e) {
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-0 text-2xl">
       {#each solutions as { id, title, details }}
       <div class="card m-4 px-6 py-4 md:p-12">
-        <h3 class="font-bold text-xl md:text-3xl lg:text-5xl mb-0 sm:mb-4">0{id}</h3>
-        <h3 class="font-semibold text-xl lg:text-4xl tracking-wide mb-2 sm:mb-8">{title}</h3>
-        <ol class="list-decimal list-inside text-sm md:text-xl leading-loose md:leading-loose">
+        <h3 class="font-bold text-xl md:text-3xl xl:text-5xl mb-0 sm:mb-4">0{id}</h3>
+        <h3 class="font-semibold text-xl xl:text-4xl tracking-wide mb-2 sm:mb-8">{title}</h3>
+        <ol class="list-decimal list-inside text-sm xl:text-xl leading-loose xl:leading-loose">
           {#each details as detail}
           <li>{detail}</li>
           {/each}
@@ -195,9 +187,7 @@ function openModal(e) {
 <section class="py-6 sm:py-20">
   <div class="container mx-auto">
     <h2 class="text-center text-2xl lg:text-5xl font-semibold tracking-wide my-6 sm:my-16">我们来访的故事</h2>
-
     <Modal {video} />
-
     <div class="mb-16">
       <Splide aria-label="My Stories" options={{
         arrows: false,
@@ -206,10 +196,10 @@ function openModal(e) {
         <SplideSlide>
           <div class="flex flex-col-reverse sm:flex-row gap-x-16">
             <div class="basis-5/12 mt-4 md:mt-0">
-              <a href={null} on:click|preventDefault={() => {openModal(story.video)}}><img src={story.image} alt="Story 1" class="rounded-2xl" /></a>
+              <a href={null} class="cursor-pointer" on:click|preventDefault={() => {openModal(story.video)}}><img src={story.image} alt="Story 1" class="rounded-2xl" /></a>
             </div>
             <div class="basis-7/12">
-              <div class="flex flex-row gap-x-4 items-center mb-4 sm:mb-8">
+              <div class="flex flex-row gap-x-4 items-center mb-4 xl:mb-8">
                 <div class="flex-shrink">
                   <img src={story.avatar} alt="Avatar 1" class="rounded-full" />
                 </div>
@@ -218,7 +208,7 @@ function openModal(e) {
                   <h5 class="text-base">{story.title}</h5>
                 </div>
               </div>
-              <p class="text-base md:text-2xl leading-loose md:leading-[1.75]">{story.content}</p>
+              <p class="text-base xl:text-2xl leading-loose xl:leading-[1.75]">{story.content}</p>
             </div>
           </div>
         </SplideSlide>
@@ -231,7 +221,7 @@ function openModal(e) {
 <section class="py-10 sm:py-20 bg-secondary">
   <div class="container mx-auto px-2 text-base lg:text-2xl leading-loose">
     <div class="grid place-items-center">
-      <h2 class="text-2xl lg:text-5xl font-bold my-0 sm:my-16">相信自己，相信Penny博士</h2>
+      <h2 class="text-2xl xl:text-5xl font-bold my-0 sm:my-16">相信自己，相信Penny博士</h2>
     </div>
     <div class="m-4 p-8 pb-16 lg:px-20 lg:py-16 slider-box aspect-[16/7]">
     <Splide aria-label="Dr.Penny" options={{
@@ -246,7 +236,7 @@ function openModal(e) {
           <div class="lg:basis-[53.75%]">
             <h3 transition:fade class="text-base lg:text-4xl font-bold leading-normal mb-2 lg:mb-4">婚姻&家庭</h3>
             <h3 class="text-base lg:text-4xl font-bold leading-normal mb-2 lg:mb-12">心理咨询专业博士</h3>
-            <p class="leading-loose">Penny博士在美国康萨斯州立大学(Kanas state University)获得了博士学位, 这在国内心理咨询师专业水平参差不齐的大环境下, 可以算是专业实力的最强认证.</p>
+            <p class="text-base lg:text-xl leading-loose lg:leading-relaxed xl:leading-loose">Penny博士在美国康萨斯州立大学(Kanas state University)获得了博士学位, 这在国内心理咨询师专业水平参差不齐的大环境下, 可以算是专业实力的最强认证.</p>
           </div>
         </div>
       </SplideSlide>
@@ -256,9 +246,9 @@ function openModal(e) {
             <img src="/images/slide-1.avif" alt="">
           </div>
           <div class="lg:basis-[53.75%]">
-            <h3 class="text-base lg:text-4xl font-bold leading-normal mb-2 lg:mb-4">婚姻&家庭</h3>
+            <h3 transition:fade class="text-base lg:text-4xl font-bold leading-normal mb-2 lg:mb-4">婚姻&家庭</h3>
             <h3 class="text-base lg:text-4xl font-bold leading-normal mb-2 lg:mb-12">心理咨询专业博士</h3>
-            <p class="leading-loose">Penny博士在美国康萨斯州立大学(Kanas state University)获得了博士学位, 这在国内心理咨询师专业水平参差不齐的大环境下, 可以算是专业实力的最强认证.</p>
+            <p class="text-base lg:text-xl leading-loose lg:leading-relaxed xl:leading-loose">Penny博士在美国康萨斯州立大学(Kanas state University)获得了博士学位, 这在国内心理咨询师专业水平参差不齐的大环境下, 可以算是专业实力的最强认证.</p>
           </div>
         </div>
       </SplideSlide>
