@@ -101,12 +101,12 @@ function openModal(e) {
     </div>
     <div class="flex flex-col sm:flex-row gap-0 xl:gap-24 do-box bg-contain bg-no-repeat aspect-[16/7] text-primary text-3xl">
       <div class="basis-[40%] flex flex-col justify-center items-center border-b sm:border-b-0 sm:mt-2 sm:mb-4 sm:border-r border-dashed border-primary">
-        <h3 class="text-base sm:text-3xl font-semibold my-8 sm:mb-8">陪伴困境中的你</h3>
+        <h3 class="text-base sm:text-3xl font-semibold my-8 mb-4 sm:mb-8">陪伴困境中的你</h3>
         <img src="/images/plight.svg" alt="陪伴困境中的你" class="w-48 sm:w-64 mb-8">
       </div>
       <div class="basis-[60%] flex flex-col justify-center py-8">
-        <h3 class="text-center sm:text-left text-base sm:text-3xl font-semibold tracking-wider lg:mb-4 xl:my-6 ml-6">帮你解决问题</h3>
-        <ul class="text-black text-sm sm:text-2xl lg:leading-loose xl:leading-[3em] ml-6 mb-8 flex flex-row flex-wrap">
+        <h3 class="text-center sm:text-left text-base sm:text-3xl font-semibold tracking-wider mb-4 xl:my-6 ml-6">帮你解决问题</h3>
+        <ul class="text-black text-sm sm:text-2xl leading-loose lg:leading-loose xl:leading-[3em] ml-6 mb-8 flex flex-row flex-wrap">
           {#each solves as slave}
           <li class="w-36 sm:w-64 xl:mb-4 flex flex-row items-center">
             <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 md:w-8 md:h-9 mr-4">
