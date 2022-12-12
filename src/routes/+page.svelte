@@ -271,7 +271,7 @@ function openModal(e) {
 .card {
   background-image: url('/images/card-bg.svg');
   background-size: 100% 100%;
-  @apply aspect-square bg-no-repeat bg-cover relative;
+  @apply w-auto aspect-square bg-no-repeat bg-cover relative;
 }
 
 </style>
