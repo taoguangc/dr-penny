@@ -8,7 +8,7 @@
 	registerTab(tab)
 </script>
 
-<button class="w-8 h-8 md:w-10 md:h-10 mr-2 rounded-full border border-indigo-300 text-xl text-indigo-300" class:selected="{$selectedTab === tab}" on:click="{() => selectTab(tab)}">
+<button class="w-8 h-8 md:w-10 md:h-10 mr-2 rounded-full border border-indigo-300 text-xl text-indigo-300 outline-none" class:selected="{$selectedTab === tab}" on:click="{() => selectTab(tab)}">
 	<slot></slot>
 </button>
 
