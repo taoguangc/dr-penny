@@ -165,11 +165,11 @@ function openModal(e) {
 </section>
 
 <section class="py-12 md:py-20 bg-secondary">
-  <div class="container mx-auto p-4 md:p-16">
-    <h2 class="text-center text-2xl lg:text-5xl font-semibold tracking-wide my-4 sm:my-16">我们的解决方案</h2>
-    <div class="grid grid-cols-1 lg:grid-cols-2 gap-0 text-2xl">
+  <div class="container mx-auto p-8 md:p-16">
+    <h2 class="text-center text-2xl lg:text-5xl font-semibold tracking-wide my-6 sm:my-16">我们的解决方案</h2>
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 text-2xl">
       {#each solutions as { id, title, details }}
-      <div class="card m-4 px-6 py-4 md:p-12">
+      <div class="card w-auto aspect-square px-6 py-4 md:p-12">
         <h3 class="font-bold text-xl md:text-3xl xl:text-5xl mb-0 sm:mb-4">0{id}</h3>
         <h3 class="font-semibold text-xl xl:text-4xl tracking-wide mb-2 sm:mb-8">{title}</h3>
         <ol class="list-decimal list-inside text-sm xl:text-xl leading-loose xl:leading-loose">
@@ -271,7 +271,7 @@ function openModal(e) {
 .card {
   background-image: url('/images/card-bg.svg');
   background-size: 100% 100%;
-  @apply w-auto aspect-square bg-no-repeat bg-cover relative;
+  @apply  bg-no-repeat bg-cover relative;
 }
 
 </style>
