@@ -196,11 +196,25 @@ function openModal(e) {
         <SplideSlide>
           <div class="flex flex-col-reverse sm:flex-row gap-x-16">
             <div class="basis-5/12 mt-4 md:mt-0">
-              <a href={null} class="cursor-pointer" on:click|preventDefault={() => {openModal(story.video)}}><img src={story.image} alt="Story 1" class="rounded-2xl" /></a>
+              <a href={null} class="releative cursor-pointer" on:click|preventDefault={() => {openModal(story.video)}}>
+                <div class="absolute z-10 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                  <svg width="68" height="68" viewBox="0 0 68 68" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="34" cy="34" r="34" fill="black" fill-opacity="0.6"/>
+                  <path d="M44.4786 31.5969L29.8234 21.3383C29.3292 20.9933 28.7407 20.8091 28.1381 20.8107C27.6672 20.806 27.203 20.922 26.7898 21.1478C26.3141 21.3942 25.9151 21.7663 25.636 22.2236C25.357 22.6809 25.2086 23.206 25.207 23.7417V44.259C25.2086 44.7947 25.357 45.3197 25.636 45.7771C25.9151 46.2344 26.3141 46.6065 26.7898 46.8529C27.203 47.0786 27.6672 47.1947 28.1381 47.19C28.7407 47.1916 29.3292 47.0074 29.8234 46.6624L44.4786 36.4038C44.8656 36.1337 45.1816 35.7741 45.3998 35.3557C45.618 34.9372 45.732 34.4723 45.732 34.0003C45.732 33.5284 45.618 33.0635 45.3998 32.645C45.1816 32.2266 44.8656 31.867 44.4786 31.5969Z" fill="white"/>
+                  </svg> 
+                </div>
+                <img src={story.image} alt="Story 1" class="rounded-2xl" />
+              </a>
             </div>
             <div class="basis-7/12">
               <div class="flex flex-row gap-x-4 items-center mb-4 xl:mb-8">
                 <div class="flex-shrink">
+                  <div class="absolute z-10 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                    <svg width="68" height="68" viewBox="0 0 68 68" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="34" cy="34" r="34" fill="black" fill-opacity="0.6"/>
+                    <path d="M44.4786 31.5969L29.8234 21.3383C29.3292 20.9933 28.7407 20.8091 28.1381 20.8107C27.6672 20.806 27.203 20.922 26.7898 21.1478C26.3141 21.3942 25.9151 21.7663 25.636 22.2236C25.357 22.6809 25.2086 23.206 25.207 23.7417V44.259C25.2086 44.7947 25.357 45.3197 25.636 45.7771C25.9151 46.2344 26.3141 46.6065 26.7898 46.8529C27.203 47.0786 27.6672 47.1947 28.1381 47.19C28.7407 47.1916 29.3292 47.0074 29.8234 46.6624L44.4786 36.4038C44.8656 36.1337 45.1816 35.7741 45.3998 35.3557C45.618 34.9372 45.732 34.4723 45.732 34.0003C45.732 33.5284 45.618 33.0635 45.3998 32.645C45.1816 32.2266 44.8656 31.867 44.4786 31.5969Z" fill="white"/>
+                    </svg> 
+                  </div>
                   <img src={story.avatar} alt="Avatar 1" class="rounded-full" />
                 </div>
                 <div class="flex flex-col">
