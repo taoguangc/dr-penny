@@ -151,7 +151,7 @@ const studies = [
 <section class="pt-8 pb-16 md:py-20 bg-secondary">
   <div class="container mx-auto px-4 md:px-16 text-base lg:text-2xl leading-loose">
     <div class="grid place-items-center">
-      <h2 class="text-xl md:text-5xl font-bold my-4 md:my-16">成功案例</h2>
+      <h2 class="text-xl md:text-5xl font-bold my-4 md:my-16">我的来访故事</h2>
     </div>
     <div class="m-0 md:m-4 p-4 md:px-20 md:py-16 cases-box2">
     <Splide class="cases" aria-label="Dr.Penny" options={{
@@ -168,7 +168,7 @@ const studies = [
           <path d="M176.5 0C176.5 21.0968 160.5 21.5457 158 15.2614C155.5 8.9771 164.648 7.63091 165.5 13.4663C166.352 19.3017 157 29.6254 141 26.0344C125 22.4434 82 28.7277 72.5 28.7277C63 28.7277 59.6 26.0344 52 26.0344C42.5 26.0344 40.5 30.9721 32.5 31.8698C24.5 32.7676 20.5 28.7277 13 28.7277C5.5 28.7277 4.5 30.0743 0.5 31.8698" stroke="#FF5685" stroke-width="2" stroke-dasharray="2 2"/>
           </svg>
         </div>
-        <div class="w-full flex flex-col md:flex-row space-x-0 md:space-x-12 text-xs md:text-xl leading-loose md:leading-loose">
+        <div class="w-full flex flex-col md:flex-row gap-x-0 md:gap-x-12 text-xs md:text-xl leading-loose md:leading-loose">
           <div class="md:flex-1">
             <p>很多时候，来访者会和我聊很多他和别人的关系问题，可是因为都是他的视角，所以我并不能确定描述的有多么客观、准确。</p>
             <p>这样的情况下，咨询师通常会更多地参考自己的感受，观察此时此地来访者和自己的关系里正在发生的事情。</p>
@@ -192,17 +192,17 @@ const studies = [
           <svg class="hidden md:block" width="176" height="32" viewBox="0 0 176 32" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M1 0C1 21.0968 17 21.5457 19.5 15.2614C22 8.9771 12.8518 7.63091 12 13.4663C11.1482 19.3017 20.5 29.6254 36.5 26.0344C52.5 22.4434 95.5 28.7277 105 28.7277C114.5 28.7277 117.9 26.0344 125.5 26.0344C135 26.0344 137 30.9721 145 31.8698C153 32.7676 157 28.7277 164.5 28.7277C172 28.7277 173 30.0743 177 31.8698" stroke="#FF5685" stroke-width="2" stroke-dasharray="2 2"/>
           </svg>
-          <h3 class="mx-0 md:mx-6 mb-2 text-lg md:text-3xl font-semibold text-primary">张先生和他的太太</h3>
+          <h3 class="mx-0 md:mx-6 mb-2 text-lg md:text-3xl font-semibold text-primary">Esther的婚姻私教项目的收获</h3>
           <svg class="hidden md:block" width="176" height="32" viewBox="0 0 176 32" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M176.5 0C176.5 21.0968 160.5 21.5457 158 15.2614C155.5 8.9771 164.648 7.63091 165.5 13.4663C166.352 19.3017 157 29.6254 141 26.0344C125 22.4434 82 28.7277 72.5 28.7277C63 28.7277 59.6 26.0344 52 26.0344C42.5 26.0344 40.5 30.9721 32.5 31.8698C24.5 32.7676 20.5 28.7277 13 28.7277C5.5 28.7277 4.5 30.0743 0.5 31.8698" stroke="#FF5685" stroke-width="2" stroke-dasharray="2 2"/>
           </svg>
         </div>
-        <div class="w-full flex flex-col md:flex-row space-x-0 md:space-x-12 text-xs md:text-xl leading-loose md:leading-loose">
+        <div class="w-full flex flex-col md:flex-row gap-x-0 md:gap-x-12 text-xs md:text-xl leading-loose md:leading-relaxed">
           <div class="md:flex-1">
-            <p>很多时候，来访者会和我聊很多他和别人的关系问题，可是因为都是他的视角，所以我并不能确定描述的有多么客观、准确。</p>
-            <p>这样的情况下，咨询师通常会更多地参考自己的感受，观察此时此地来访者和自己的关系里正在发生的事情。</p>
-            <p>咨询的时候我会一边关注来访者，一边关注自己的感受，并且在适当的时候将自己的感受非常坦诚地分享给对方。</p>
-            <p>例如我曾经遇到过一个滔滔不绝的来访者，</p>
+            <p>1、私教课程让我们夫妻双方了解到情绪和依恋模式，最主要的还是情绪方面的知识，因为我最大的问题就在于情绪，给了我们理论基础，了解到我们的情绪都是有原因的，可以被接纳的；</p>
+            <p>2、伴侣咨询引导我们正确表达出脆弱和内心的感受，可以使夫妻双方的沟通达到新的深度，让我们更了解对方；</p>
+            <p>3、从想离婚到变好，我们其实也经历了四五个月，中间也有争吵，崩溃和怀疑，最终变好是多方面因素共同起作用的，包括</p>
+            <p>一、先生的态度，是否让我感觉到有足够的诚意，是否能坚持，从而让我对未来慢慢有信心，</p>
           </div>
           <div class="hidden md:block">
             <svg width="14" height="437" viewBox="0 0 14 437" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -210,9 +210,12 @@ const studies = [
             </svg>              
           </div>
           <div class="md:flex-1">
-            <p>喜欢花大量时间讲她的人生故事，所以我选择了一个时机来打断她：「当我在听你讲述你的故事的时候，注意到自己感觉有一些疏离，和你的距离变得有些远了。</p>
-            <p>我在想，你是否也会让生活中其他的人有类似的感受呢？你现在的感受是怎样的？和我讲故事是因为你不愿意接近我吗？」</p>
-            <p>这种针对此时此地的反馈，往往能够让对话变得非常坦诚，让双方的对话从客套的侃侃而谈走向更真实和深刻的层面。</p>
+          <p>二、先生是否能真的理解我，明白我情绪的由来，并且接纳，</p>
+          <p>三、双方是否还有感情在，</p>
+        <p>四、我是否能接纳自己，停止自我攻击，可以多在自己身上投入，多爱自己给予自己信心，</p>
+      <p>五、两个人能否找到适合双方的沟通方式，尽量避免互相攻击和争吵，</p>
+    <p>六、足够长的时间，去弥补感情的裂痕。</p>
+    <p>其实变好不是说能完全忘记伤害，而是让自己更强大和更自信，能带着伤往前走，并且不再害怕伤害，有对感情的追求和信念，不随波逐流。</p>
           </div>
         </div>
       </SplideSlide>
