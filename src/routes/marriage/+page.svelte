@@ -41,8 +41,8 @@ const studies = [
 
 <section class="py-8 md:py-20">
   <div class="container mx-auto text-xs px-2 md:px-16 md:text-xl leading-loose md:leading-extra-loose relative">
-    <div class="flex justify-center mb-4 md:mb-20">
-      <img src="/images/slove.svg" alt="解决问题：很多年的恶性循环" class="px-8 md:px-0 md:w-[28rem]">
+    <div class="flex flex-col text-center mb-4 md:mb-20">
+      <h2 class="text-white font-bold text-xl sm:text-4xl pt-3 pb-4 pl-4 sm:pt-6 sm:pb-8 sm:pl-6 bg-contain bg-no-repeat bg-center tracking-wide slove-title">解决问题：很多年的恶性循环</h2>
     </div>
     <div class="flex lg:flex-row justify-center ml-0 md:ml-16">
       <div class="slove-box h-6 md:h-12 px-2 md:px-4 mb-4 md:mb-8 mr-2">“他背叛了我，我不相信他”</div>
@@ -233,6 +233,10 @@ const studies = [
   .marriage-bg {
     background-image: url(/images/marriage-bg.webp);
   }
+}
+
+.slove-title {
+  background-image: url('/images/slove-title.svg');
 }
 
 .slove-box {

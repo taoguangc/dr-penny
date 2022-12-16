@@ -7,14 +7,14 @@ import { Tabs, TabList, TabPanel, Tab } from '$lib/tabs'
 import { modules } from '$lib/data/modules.json'
 
 const steps = [
-  {img: '/images/step-1.jpg', title: '第一步: <span class="text-primary">治愈</span>小时候的负面阴影', content: '无论因为校园经历，还是原生家庭，都需要先从你的潜意识里，走出你小时候的负面经历，让你能对特定人际关系“脱敏”。'},
-  {img: '/images/step-2.jpg', title: '第二步: <span class="text-indigo-600">解决</span>焦虑和不安', content: '不要再去压抑，不能再放大负面情绪，你需要用脑神经科学的方法去处理情绪，让它带你走出来.'},
-  {img: '/images/step-3.jpg', title: '第三步: <span class="text-primary">不再</span>对比和自我否定', content: '你需要学会如何自我共情，如何接纳自己。掌握心理学方法，停下你无法控制的负面想法。'},
-  {img: '/images/step-4.jpg', title: '第四步: <span class="text-indigo-600">跳出</span>恶性循环', content: '你需要看到你的“内在运作模式” - 负面情绪 → 负面解读世界 → 缺乏行动力。换一幅眼镜，用积极的视角看自己和世界。'},
-  {img: '/images/step-5.jpg', title: '第五步: <span class="text-primary">建立</span>并拥有正面情绪', content: '你要学会肯定自己，鼓励自己，甚至为自己庆祝。积累自己对自己的正面情绪，用更正面的眼光看自己.'},
-  {img: '/images/step-6.jpg', title: '第六步: <span class="text-indigo-600">无负担</span>享受快乐', content: '你需要知道你值得快乐，放下”快乐就会被批评“的内疚心理。学会处理负面情绪，也学会放松享受乐趣。'},
-  {img: '/images/step-7.jpg', title: '第七步: <span class="text-primary">养成</span>正面的潜意识', content: '停止逼迫自己前进，而是用轻松和积极的正面潜意识，去找到你的热情所在，才能获得你想要的生活状态。'},
-  {img: '/images/step-8.jpg', title: '第八步: 养成<span class="text-indigo-600">自信和幸福</span>的生活习惯', content: '学会把学到的高效，自信和幸福的习惯和方法应用在日常生活中，最终从内在影响到外在生活，实现你的更多人生目标。'},
+  {img: '/images/step-1.webp', title: '第一步: <span class="text-primary">治愈</span>小时候的负面阴影', content: '无论因为校园经历，还是原生家庭，都需要先从你的潜意识里，走出你小时候的负面经历，让你能对特定人际关系“脱敏”。'},
+  {img: '/images/step-2.webp', title: '第二步: <span class="text-indigo-600">解决</span>焦虑和不安', content: '不要再去压抑，不能再放大负面情绪，你需要用脑神经科学的方法去处理情绪，让它带你走出来.'},
+  {img: '/images/step-3.webp', title: '第三步: <span class="text-primary">不再</span>对比和自我否定', content: '你需要学会如何自我共情，如何接纳自己。掌握心理学方法，停下你无法控制的负面想法。'},
+  {img: '/images/step-4.webp', title: '第四步: <span class="text-indigo-600">跳出</span>恶性循环', content: '你需要看到你的“内在运作模式” - 负面情绪 → 负面解读世界 → 缺乏行动力。换一幅眼镜，用积极的视角看自己和世界。'},
+  {img: '/images/step-5.webp', title: '第五步: <span class="text-primary">建立</span>并拥有正面情绪', content: '你要学会肯定自己，鼓励自己，甚至为自己庆祝。积累自己对自己的正面情绪，用更正面的眼光看自己.'},
+  {img: '/images/step-6.webp', title: '第六步: <span class="text-indigo-600">无负担</span>享受快乐', content: '你需要知道你值得快乐，放下”快乐就会被批评“的内疚心理。学会处理负面情绪，也学会放松享受乐趣。'},
+  {img: '/images/step-7.webp', title: '第七步: <span class="text-primary">养成</span>正面的潜意识', content: '停止逼迫自己前进，而是用轻松和积极的正面潜意识，去找到你的热情所在，才能获得你想要的生活状态。'},
+  {img: '/images/step-8.webp', title: '第八步: 养成<span class="text-indigo-600">自信和幸福</span>的生活习惯', content: '学会把学到的高效，自信和幸福的习惯和方法应用在日常生活中，最终从内在影响到外在生活，实现你的更多人生目标。'},
 ]
 
 const studies = [
@@ -132,7 +132,7 @@ const studies = [
     <div class="grid place-items-center">
       <h2 class="text-xl md:text-5xl font-bold my-4 md:my-16">成功案例</h2>
     </div>
-    <div class="m-0 md:m-4 p-4 md:px-20 md:py-16 cases-box">
+    <div class="m-0 md:m-4 p-4 md:px-12 md:py-16 cases-box">
     <Splide class="cases" aria-label="Dr.Penny" options={{
       arrows: false,
     }}
@@ -142,7 +142,7 @@ const studies = [
           <svg class="hidden md:block" width="176" height="32" viewBox="0 0 176 32" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M1 0C1 21.0968 17 21.5457 19.5 15.2614C22 8.9771 12.8518 7.63091 12 13.4663C11.1482 19.3017 20.5 29.6254 36.5 26.0344C52.5 22.4434 95.5 28.7277 105 28.7277C114.5 28.7277 117.9 26.0344 125.5 26.0344C135 26.0344 137 30.9721 145 31.8698C153 32.7676 157 28.7277 164.5 28.7277C172 28.7277 173 30.0743 177 31.8698" stroke="#3b5bFb" stroke-width="2" stroke-dasharray="2 2"/>
         </svg>
-          <h3 class="mx-0 md:mx-6 mb-2 text-lg md:text-3xl font-semibold text-indigo-600">张先生和他的太太</h3>
+          <h3 class="mx-0 md:mx-6 mb-2 text-lg md:text-3xl text-center font-semibold text-indigo-600">理工男先生与感性太太从离婚边缘到幸福婚姻</h3>
           <svg class="hidden md:block" width="176" height="32" viewBox="0 0 176 32" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M176.5 0C176.5 21.0968 160.5 21.5457 158 15.2614C155.5 8.9771 164.648 7.63091 165.5 13.4663C166.352 19.3017 157 29.6254 141 26.0344C125 22.4434 82 28.7277 72.5 28.7277C63 28.7277 59.6 26.0344 52 26.0344C42.5 26.0344 40.5 30.9721 32.5 31.8698C24.5 32.7676 20.5 28.7277 13 28.7277C5.5 28.7277 4.5 30.0743 0.5 31.8698" stroke="#3b5bFb" stroke-width="2" stroke-dasharray="2 2"/>
           </svg>
@@ -171,7 +171,7 @@ const studies = [
           <svg class="hidden md:block" width="176" height="32" viewBox="0 0 176 32" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M1 0C1 21.0968 17 21.5457 19.5 15.2614C22 8.9771 12.8518 7.63091 12 13.4663C11.1482 19.3017 20.5 29.6254 36.5 26.0344C52.5 22.4434 95.5 28.7277 105 28.7277C114.5 28.7277 117.9 26.0344 125.5 26.0344C135 26.0344 137 30.9721 145 31.8698C153 32.7676 157 28.7277 164.5 28.7277C172 28.7277 173 30.0743 177 31.8698" stroke="#3b5bFb" stroke-width="2" stroke-dasharray="2 2"/>
           </svg>
-          <h3 class="mx-0 md:mx-6 mb-2 text-lg md:text-3xl font-semibold text-indigo-600">张先生和他的太太</h3>
+          <h3 class="mx-0 md:mx-6 mb-2 text-lg md:text-3xl text-center font-semibold text-indigo-600">张先生和他的太太</h3>
           <svg class="hidden md:block" width="176" height="32" viewBox="0 0 176 32" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M176.5 0C176.5 21.0968 160.5 21.5457 158 15.2614C155.5 8.9771 164.648 7.63091 165.5 13.4663C166.352 19.3017 157 29.6254 141 26.0344C125 22.4434 82 28.7277 72.5 28.7277C63 28.7277 59.6 26.0344 52 26.0344C42.5 26.0344 40.5 30.9721 32.5 31.8698C24.5 32.7676 20.5 28.7277 13 28.7277C5.5 28.7277 4.5 30.0743 0.5 31.8698" stroke="#3b5bFb" stroke-width="2" stroke-dasharray="2 2"/>
           </svg>
