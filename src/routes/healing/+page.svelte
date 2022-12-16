@@ -44,8 +44,8 @@ const studies = [
 
 <section class="py-8 md:py-20">
   <div class="container mx-auto px-4 md:px-16 leading-loose">
-    <div class="flex justify-center mb-4 md:mb-20">
-      <img src="/images/step8.svg" alt="" class="w-60 md:w-96">
+    <div class="flex flex-col text-center mb-4 md:mb-20">
+      <h2 class="text-white font-bold text-xl sm:text-4xl pt-3 pb-4 sm:pt-8 sm:pb-10 bg-contain bg-no-repeat bg-center tracking-wide step-title">自信爱自己8步曲</h2>
     </div>
     {#each steps as step}
     <div class="step-box p-2 pt-4 md:p-8 mb-2 md:mb-8 w-full md:w-[60rem] flex flex-row items-start md:items-center">
@@ -217,6 +217,9 @@ const studies = [
 </section>
 
 <style>
+.step-title {
+  background-image: url(/images/step-title.svg);
+}
 .step-box {
   background-image: url(/images/step-box.svg);
   @apply bg-no-repeat;
