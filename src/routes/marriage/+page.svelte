@@ -161,14 +161,14 @@ const studies = [
       <SplideSlide>
         <div class="flex flex-row justify-center md:mb-16">
           <svg class="hidden md:block" width="176" height="32" viewBox="0 0 176 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M1 0C1 21.0968 17 21.5457 19.5 15.2614C22 8.9771 12.8518 7.63091 12 13.4663C11.1482 19.3017 20.5 29.6254 36.5 26.0344C52.5 22.4434 95.5 28.7277 105 28.7277C114.5 28.7277 117.9 26.0344 125.5 26.0344C135 26.0344 137 30.9721 145 31.8698C153 32.7676 157 28.7277 164.5 28.7277C172 28.7277 173 30.0743 177 31.8698" stroke="#FF5685" stroke-width="2" stroke-dasharray="2 2"/>
+        <path d="M1 0C1 21.0968 17 21.5457 19.5 15.2614C22 8.9771 12.8518 7.63091 12 13.4663C11.1482 19.3017 20.5 29.6254 36.5 26.0344C52.5 22.4434 95.5 28.7277 105 28.7277C114.5 28.7277 117.9 26.0344 125.5 26.0344C135 26.0344 137 30.9721 145 31.8698C153 32.7676 157 28.7277 164.5 28.7277C172 28.7277 173 30.0743 177 31.8698" stroke="#3b5bFb" stroke-width="2" stroke-dasharray="2 2"/>
         </svg>
-          <h3 class="mx-0 md:mx-6 mb-2 text-lg md:text-3xl font-semibold text-primary">张先生和他的太太</h3>
+          <h3 class="mx-0 md:mx-6 mb-2 text-lg md:text-3xl text-center font-semibold text-indigo-600">理工男先生与感性太太从离婚边缘到幸福婚姻</h3>
           <svg class="hidden md:block" width="176" height="32" viewBox="0 0 176 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M176.5 0C176.5 21.0968 160.5 21.5457 158 15.2614C155.5 8.9771 164.648 7.63091 165.5 13.4663C166.352 19.3017 157 29.6254 141 26.0344C125 22.4434 82 28.7277 72.5 28.7277C63 28.7277 59.6 26.0344 52 26.0344C42.5 26.0344 40.5 30.9721 32.5 31.8698C24.5 32.7676 20.5 28.7277 13 28.7277C5.5 28.7277 4.5 30.0743 0.5 31.8698" stroke="#FF5685" stroke-width="2" stroke-dasharray="2 2"/>
+          <path d="M176.5 0C176.5 21.0968 160.5 21.5457 158 15.2614C155.5 8.9771 164.648 7.63091 165.5 13.4663C166.352 19.3017 157 29.6254 141 26.0344C125 22.4434 82 28.7277 72.5 28.7277C63 28.7277 59.6 26.0344 52 26.0344C42.5 26.0344 40.5 30.9721 32.5 31.8698C24.5 32.7676 20.5 28.7277 13 28.7277C5.5 28.7277 4.5 30.0743 0.5 31.8698" stroke="#3b5bFb" stroke-width="2" stroke-dasharray="2 2"/>
           </svg>
         </div>
-        <div class="w-full flex flex-col md:flex-row gap-x-0 md:gap-x-12 text-xs md:text-xl leading-loose md:leading-loose">
+        <div class="w-full flex flex-col md:flex-row space-x-0 md:space-x-12 text-xs md:text-xl leading-loose md:leading-loose">
           <div class="md:flex-1">
             <p>很多时候，来访者会和我聊很多他和别人的关系问题，可是因为都是他的视角，所以我并不能确定描述的有多么客观、准确。</p>
             <p>这样的情况下，咨询师通常会更多地参考自己的感受，观察此时此地来访者和自己的关系里正在发生的事情。</p>
@@ -177,7 +177,7 @@ const studies = [
           </div>
           <div class="hidden md:block">
             <svg width="14" height="437" viewBox="0 0 14 437" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M10.0854 1C20.1268 68.2913 1 144.058 1 215.217C1 293.658 10.0854 356.967 10.0853 437" stroke="#FF5685" stroke-dasharray="6 6"/>
+            <path d="M10.0854 1C20.1268 68.2913 1 144.058 1 215.217C1 293.658 10.0854 356.967 10.0853 437" stroke="#3b5bFb" stroke-dasharray="6 6"/>
             </svg>              
           </div>
           <div class="md:flex-1">
