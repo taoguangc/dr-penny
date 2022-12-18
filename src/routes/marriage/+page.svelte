@@ -153,7 +153,7 @@ const studies = [
     <div class="grid place-items-center">
       <h2 class="text-xl md:text-5xl font-bold my-4 md:my-16">我的来访故事</h2>
     </div>
-    <div class="m-0 md:m-4 p-4 md:px-20 md:py-16 cases-box2">
+    <div class="m-0 md:m-4 p-4 md:px-12 md:py-16 cases-box2">
     <Splide class="cases" aria-label="Dr.Penny" options={{
       arrows: false,
     }}
