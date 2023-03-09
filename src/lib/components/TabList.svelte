@@ -1,3 +1,5 @@
-<div class="absolute -top-10 md:top-8 left-1/2 md:left-auto md:right-8 transform -translate-x-1/2 md:translate-x-0">
-	<slot />
+<div
+  class="absolute inset-0 flex justify-center -top-12 md:top-8 md:left-auto md:right-8"
+>
+  <slot />
 </div>
