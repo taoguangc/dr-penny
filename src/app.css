@@ -88,6 +88,12 @@ p {
   z-index: 1
 }
 
+@media only screen and (max-width:1280px) {
+  .splide__pagination {
+    bottom: -0.5em;
+  }
+}
+
 .cases .splide__pagination {
   bottom: -4em;
 }
