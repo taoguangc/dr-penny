@@ -14,7 +14,6 @@ function toggle() {
   isOpen = !isOpen
 }
 
-console.log($page.url.pathname);
 </script>
 
 <header>

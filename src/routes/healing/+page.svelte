@@ -1,10 +1,18 @@
 <script>
-  import { Splide, SplideSlide } from "@splidejs/svelte-splide"
-  import "@splidejs/svelte-splide/css/core"
+import { Tabs, TabList, TabPanel, Tab } from "$lib/tabs"
+import { modules } from "$lib/data/modules.json"
+import { cases } from "$lib/data/cases.json"
 
-  import { Tabs, TabList, TabPanel, Tab } from "$lib/tabs"
-  // import Lessons from '$lib/components/Lessons.svelte'
-  import { modules } from "$lib/data/modules.json"
+import Modal from "$lib/components/Modal.svelte"
+import { isModalOpen } from "$lib/stores/ModalStore"
+let video = null
+function openModal(e) {
+  isModalOpen.set(true)
+  video = e
+}
+
+import { Splide, SplideSlide } from "@splidejs/svelte-splide"
+import "@splidejs/svelte-splide/css/core"
 
   const steps = [
     {
@@ -235,177 +243,55 @@
 </section>
 
 <section class="pt-8 pb-16 md:py-20 bg-indigo-50">
-  <div
-    class="container mx-auto px-4 md:px-16 text-base lg:text-2xl leading-loose"
-  >
+  <div class="container mx-auto px-4 md:px-16 text-base lg:text-2xl leading-loose">
     <div class="grid place-items-center">
       <h2 class="text-xl md:text-5xl font-bold my-4 md:my-16">成功案例</h2>
     </div>
+    <Modal {video} />
     <div class="m-0 md:m-4 p-4 md:px-12 md:py-16 cases-box">
-      <Splide
-        class="cases"
-        aria-label="Dr.Penny"
-        options={{
-          arrows: false
-        }}
-      >
+      <Splide class="cases" aria-label="Dr.Penny" options={{ arrows: false }}>
+        {#each cases as {title, content, image}, index}
         <SplideSlide>
           <div class="flex flex-row justify-center md:mb-16">
-            <svg
-              class="hidden md:block"
-              width="176"
-              height="32"
-              viewBox="0 0 176 32"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M1 0C1 21.0968 17 21.5457 19.5 15.2614C22 8.9771 12.8518 7.63091 12 13.4663C11.1482 19.3017 20.5 29.6254 36.5 26.0344C52.5 22.4434 95.5 28.7277 105 28.7277C114.5 28.7277 117.9 26.0344 125.5 26.0344C135 26.0344 137 30.9721 145 31.8698C153 32.7676 157 28.7277 164.5 28.7277C172 28.7277 173 30.0743 177 31.8698"
-                stroke="#3b5bFb"
-                stroke-width="2"
-                stroke-dasharray="2 2"
-              />
+            <svg class="hidden md:block" width="176" height="32" viewBox="0 0 176 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1 0C1 21.0968 17 21.5457 19.5 15.2614C22 8.9771 12.8518 7.63091 12 13.4663C11.1482 19.3017 20.5 29.6254 36.5 26.0344C52.5 22.4434 95.5 28.7277 105 28.7277C114.5 28.7277 117.9 26.0344 125.5 26.0344C135 26.0344 137 30.9721 145 31.8698C153 32.7676 157 28.7277 164.5 28.7277C172 28.7277 173 30.0743 177 31.8698" stroke="#3b5bFb" stroke-width="2" stroke-dasharray="2 2" />
             </svg>
-            <h3
-              class="mx-0 md:mx-6 mb-2 text-lg md:text-3xl text-center font-semibold text-indigo-600"
-            >
-              理工男先生与感性太太从离婚边缘到幸福婚姻
+            <h3 class="mx-0 md:mx-6 mb-2 text-lg md:text-3xl text-center font-semibold text-indigo-600">
+              {title}
             </h3>
-            <svg
-              class="hidden md:block"
-              width="176"
-              height="32"
-              viewBox="0 0 176 32"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M176.5 0C176.5 21.0968 160.5 21.5457 158 15.2614C155.5 8.9771 164.648 7.63091 165.5 13.4663C166.352 19.3017 157 29.6254 141 26.0344C125 22.4434 82 28.7277 72.5 28.7277C63 28.7277 59.6 26.0344 52 26.0344C42.5 26.0344 40.5 30.9721 32.5 31.8698C24.5 32.7676 20.5 28.7277 13 28.7277C5.5 28.7277 4.5 30.0743 0.5 31.8698"
-                stroke="#3b5bFb"
-                stroke-width="2"
-                stroke-dasharray="2 2"
-              />
+            <svg class="hidden md:block" width="176" height="32" viewBox="0 0 176 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M176.5 0C176.5 21.0968 160.5 21.5457 158 15.2614C155.5 8.9771 164.648 7.63091 165.5 13.4663C166.352 19.3017 157 29.6254 141 26.0344C125 22.4434 82 28.7277 72.5 28.7277C63 28.7277 59.6 26.0344 52 26.0344C42.5 26.0344 40.5 30.9721 32.5 31.8698C24.5 32.7676 20.5 28.7277 13 28.7277C5.5 28.7277 4.5 30.0743 0.5 31.8698" stroke="#3b5bFb" stroke-width="2" stroke-dasharray="2 2" />
             </svg>
           </div>
-          <div
-            class="w-full flex flex-col md:flex-row space-x-0 md:space-x-12 text-xs md:text-xl leading-loose md:leading-loose"
-          >
+          <div class="w-full flex flex-col md:flex-row space-x-0 md:space-x-12 text-xs md:text-xl leading-loose md:leading-loose">
             <div class="md:flex-1">
-              <p>
-                很多时候，来访者会和我聊很多他和别人的关系问题，可是因为都是他的视角，所以我并不能确定描述的有多么客观、准确。
-              </p>
-              <p>
-                这样的情况下，咨询师通常会更多地参考自己的感受，观察此时此地来访者和自己的关系里正在发生的事情。
-              </p>
-              <p>
-                咨询的时候我会一边关注来访者，一边关注自己的感受，并且在适当的时候将自己的感受非常坦诚地分享给对方。
-              </p>
-              <p>例如我曾经遇到过一个滔滔不绝的来访者，</p>
+              {content}
             </div>
             <div class="hidden md:block">
-              <svg
-                width="14"
-                height="437"
-                viewBox="0 0 14 437"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M10.0854 1C20.1268 68.2913 1 144.058 1 215.217C1 293.658 10.0854 356.967 10.0853 437"
-                  stroke="#3b5bFb"
-                  stroke-dasharray="6 6"
-                />
+              <svg width="14" height="437" viewBox="0 0 14 437" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10.0854 1C20.1268 68.2913 1 144.058 1 215.217C1 293.658 10.0854 356.967 10.0853 437" stroke="#3b5bFb" stroke-dasharray="6 6" />
               </svg>
             </div>
             <div class="md:flex-1">
-              <p>
-                喜欢花大量时间讲她的人生故事，所以我选择了一个时机来打断她：「当我在听你讲述你的故事的时候，注意到自己感觉有一些疏离，和你的距离变得有些远了。
-              </p>
-              <p>
-                我在想，你是否也会让生活中其他的人有类似的感受呢？你现在的感受是怎样的？和我讲故事是因为你不愿意接近我吗？」
-              </p>
-              <p>
-                这种针对此时此地的反馈，往往能够让对话变得非常坦诚，让双方的对话从客套的侃侃而谈走向更真实和深刻的层面。
-              </p>
+              <div class="w-full h-96 overflow-y-auto">
+                {#if index === 2}
+                <a href={null} class="relative cursor-pointer" on:click|preventDefault={() => {openModal("/images/xiaodan.mp4")}}>
+                  <div class="absolute z-10 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                    <svg width="68" height="68" viewBox="0 0 68 68" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="34" cy="34" r="34" fill="black" fill-opacity="0.6" />
+                      <path d="M44.4786 31.5969L29.8234 21.3383C29.3292 20.9933 28.7407 20.8091 28.1381 20.8107C27.6672 20.806 27.203 20.922 26.7898 21.1478C26.3141 21.3942 25.9151 21.7663 25.636 22.2236C25.357 22.6809 25.2086 23.206 25.207 23.7417V44.259C25.2086 44.7947 25.357 45.3197 25.636 45.7771C25.9151 46.2344 26.3141 46.6065 26.7898 46.8529C27.203 47.0786 27.6672 47.1947 28.1381 47.19C28.7407 47.1916 29.3292 47.0074 29.8234 46.6624L44.4786 36.4038C44.8656 36.1337 45.1816 35.7741 45.3998 35.3557C45.618 34.9372 45.732 34.4723 45.732 34.0003C45.732 33.5284 45.618 33.0635 45.3998 32.645C45.1816 32.2266 44.8656 31.867 44.4786 31.5969Z" fill="white" />
+                    </svg>
+                  </div>
+                  <img src="/images/video-cover01.avif" alt="Story 1" class="rounded-2xl" />
+                </a>
+                {:else}
+                <img src="{image}" alt="">
+                {/if}
+              </div>
             </div>
           </div>
         </SplideSlide>
-        <SplideSlide>
-          <div class="flex flex-row justify-center md:mb-16">
-            <svg
-              class="hidden md:block"
-              width="176"
-              height="32"
-              viewBox="0 0 176 32"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M1 0C1 21.0968 17 21.5457 19.5 15.2614C22 8.9771 12.8518 7.63091 12 13.4663C11.1482 19.3017 20.5 29.6254 36.5 26.0344C52.5 22.4434 95.5 28.7277 105 28.7277C114.5 28.7277 117.9 26.0344 125.5 26.0344C135 26.0344 137 30.9721 145 31.8698C153 32.7676 157 28.7277 164.5 28.7277C172 28.7277 173 30.0743 177 31.8698"
-                stroke="#3b5bFb"
-                stroke-width="2"
-                stroke-dasharray="2 2"
-              />
-            </svg>
-            <h3
-              class="mx-0 md:mx-6 mb-2 text-lg md:text-3xl text-center font-semibold text-indigo-600"
-            >
-              Dora 女 26岁 康奈尔大学毕业，个人设计工作室
-            </h3>
-            <svg
-              class="hidden md:block"
-              width="176"
-              height="32"
-              viewBox="0 0 176 32"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M176.5 0C176.5 21.0968 160.5 21.5457 158 15.2614C155.5 8.9771 164.648 7.63091 165.5 13.4663C166.352 19.3017 157 29.6254 141 26.0344C125 22.4434 82 28.7277 72.5 28.7277C63 28.7277 59.6 26.0344 52 26.0344C42.5 26.0344 40.5 30.9721 32.5 31.8698C24.5 32.7676 20.5 28.7277 13 28.7277C5.5 28.7277 4.5 30.0743 0.5 31.8698"
-                stroke="#3b5bFb"
-                stroke-width="2"
-                stroke-dasharray="2 2"
-              />
-            </svg>
-          </div>
-          <div
-            class="w-full flex flex-col md:flex-row space-x-0 md:space-x-12 text-xs md:text-xl leading-loose md:leading-loose"
-          >
-            <div class="md:flex-1">
-              <p>
-                Sue找到我时有严重的抑郁情绪，甚至有过轻生的念头。通过咨询和自信项目，她放下了抑郁焦虑，不再一直去讨好别人，划清了母亲的情绪和自己的情绪，不再牺牲自己。<br
-                />
-                她在参加自信项目的时候给自己在大理买了房子，因为她喜欢慢节奏的生活。我相信她会更开心和幸福！
-              </p>
-            </div>
-            <div class="hidden md:block">
-              <svg
-                width="14"
-                height="437"
-                viewBox="0 0 14 437"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M10.0854 1C20.1268 68.2913 1 144.058 1 215.217C1 293.658 10.0854 356.967 10.0853 437"
-                  stroke="#3b5bFb"
-                  stroke-dasharray="6 6"
-                />
-              </svg>
-            </div>
-            <div class="md:flex-1">
-              <p>
-                喜欢花大量时间讲她的人生故事，所以我选择了一个时机来打断她：「当我在听你讲述你的故事的时候，注意到自己感觉有一些疏离，和你的距离变得有些远了。
-              </p>
-              <p>
-                我在想，你是否也会让生活中其他的人有类似的感受呢？你现在的感受是怎样的？和我讲故事是因为你不愿意接近我吗？」
-              </p>
-              <p>
-                这种针对此时此地的反馈，往往能够让对话变得非常坦诚，让双方的对话从客套的侃侃而谈走向更真实和深刻的层面。
-              </p>
-            </div>
-          </div>
-        </SplideSlide>
+        {/each}
         <div class="splide__arrows" />
       </Splide>
     </div>
