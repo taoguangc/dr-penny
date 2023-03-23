@@ -170,7 +170,7 @@ const studies = [
         </div>
         <div class="w-full flex flex-col md:flex-row space-x-0 md:space-x-12 text-xs md:text-xl leading-loose md:leading-loose">
           <div class="md:flex-1">
-            <img class="w-full" src="/images/case-1.png" alt="">
+            <img class="w-full" src="/images/case-1.webp" alt="">
           </div>
           <div class="hidden md:block">
             <svg width="14" height="437" viewBox="0 0 14 437" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -178,7 +178,7 @@ const studies = [
             </svg>             
           </div>
           <div class="md:flex-1">
-            <img class="w-full" src="/images/case-2.png" alt="">
+            <img class="w-full" src="/images/case-2.webp" alt="">
           </div>
         </div>
       </SplideSlide>
