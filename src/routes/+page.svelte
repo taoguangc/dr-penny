@@ -321,8 +321,8 @@
     </h2>
     <Modal {video} />
     <div class="flex flex-col sm:flex-row gap-x-16 mb-16">
-      <div class="basis-5/12 mt-4 md:mt-0">
-        <a href={null} class="relative cursor-pointer" on:click|preventDefault={() => {openModal("/images/xiaodan.mp4")}}>
+      <div class="relative basis-5/12 mt-4 md:mt-0">
+        <a href={null} class="cursor-pointer" on:click|preventDefault={() => {openModal("/images/xiaodan.mp4")}}>
           <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10">
             <svg width="68" height="68" viewBox="0 0 68 68" fill="none" xmlns="http://www.w3.org/2000/svg">
               <circle cx="34" cy="34" r="34" fill="black" fill-opacity="0.6" />
@@ -357,10 +357,10 @@
     <hr class="my-16 border-t border-[#FF5787]">
 
     <div class="flex flex-col sm:flex-row gap-x-16">
-      <div class="basis-5/12 mt-4 md:mt-0">
+      <div class="relative basis-5/12 mt-4 md:mt-0">
         <a
           href={null}
-          class="relative cursor-pointer"
+          class="cursor-pointer"
           on:click|preventDefault={() => {
             openModal("/images/mumuxi.mp4")
           }}
