@@ -10,7 +10,7 @@
           <li class="basis-1/2"><a href="/healing">个人治愈</a></li>
           <li class="basis-1/2"><a href="/marriage">婚姻提升</a></li>
           <li class="basis-1/2"><a href="/info">免费资料</a></li>
-          <li class="basis-1/2"><a href="/contact">联系我们</a></li>
+          <li class="basis-1/2"><a href="#4" on:click|preventDefault={()=>null}>联系我们</a></li>
         </ul>
       </div>
       <div>
