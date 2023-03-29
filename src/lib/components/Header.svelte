@@ -70,7 +70,7 @@ function toggle() {
       <div class="w-80 h-80 p-16 bg-white hidden md:flex md:flex-col md:items-center">
         <h4 class="text-xl font-semibold text-indigo-600">扫一扫二维码</h4>
         <h4 class="mb-4">添加Dr.Penny微信</h4>
-        <img class="w-32 h-32" src="/images/qr-code.svg" alt="">
+        <img class="w-32 h-32" src="/images/qr-weixin.png" alt="">
       </div>
     </div>
     <div on:click={()=>(popOpen=!popOpen)} class:hidden={!popOpen} class="w-full h-screen fixed inset-0 z-20"></div>
