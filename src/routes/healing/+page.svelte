@@ -273,9 +273,9 @@ import "@splidejs/svelte-splide/css/core"
               </svg>
             </div>
             <div class="md:flex-1">
-              <div class="relative w-full h-96 overflow-y-auto">
+              <div class="w-full h-96 overflow-y-auto">
                 {#if index === 2}
-                <a href={null} class="cursor-pointer" on:click|preventDefault={() => {openModal("/images/xiaodan.mp4")}}>
+                <a href={null} class="relative block cursor-pointer" on:click|preventDefault={() => {openModal("/images/xiaodan.mp4")}}>
                   <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10">
                     <svg width="68" height="68" viewBox="0 0 68 68" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <circle cx="34" cy="34" r="34" fill="black" fill-opacity="0.6" />
