@@ -12,6 +12,11 @@ let popOpen = false
 
 function toggle() {
   isOpen = !isOpen
+  if (isOpen) {
+    document.body.style.overflow = 'hidden'
+  } else {
+    document.body.style.overflow = ''
+  }
 }
 
 </script>
