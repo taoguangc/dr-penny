@@ -86,7 +86,8 @@
 </script>
 
 <svelte:head>
-  <title>DrPenny</title>
+  <title>Penny博士婚姻与家庭咨询</title>
+  <meta name="description" content="Penny 博士是一名婚姻与家庭咨询师和督导师，现在在美国一所公立大学任职心理咨询师。美国婚姻和家庭心理咨询师 (执照: MFT001509)">
 </svelte:head>
 
 <section

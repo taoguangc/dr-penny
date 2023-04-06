@@ -311,7 +311,7 @@ import "@splidejs/svelte-splide/css/core"
         <img src="/images/experience-lesson.svg" alt="" />
       </div>
       <div class="flex-1">
-        <img src="/images/experience-weixin.svg" alt="Weixin Qr-code" />
+        <img src="/images/experience-weixin.webp" alt="Weixin Qr-code" />
       </div>
     </div>
   </div>
