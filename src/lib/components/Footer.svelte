@@ -1,3 +1,8 @@
+<script>
+import { fly } from 'svelte/transition'
+let isOpen = false
+</script>
+
 <footer>
   <section class="bg-primary py-12 lg:py-20">
     <div class="container mx-auto grid grid-cols-1 lg:grid-cols-3 gap-y-8 md:gap-y-12 px-8">
@@ -9,7 +14,16 @@
         <ul class="text-white leading-10 flex flex-col flex-wrap md:flex-col">
           <li><a href="/healing">个人治愈</a></li>
           <li><a href="/marriage">婚姻提升</a></li>
-          <li><a href="#4" on:click|preventDefault={()=>null}>联系我们</a></li>
+          <li>
+            <a href="#contact" on:click|preventDefault={()=>(isOpen=!isOpen)}>联系我们</a>
+            {#if isOpen}
+            <div class="w-60 mt-8 mx-auto md:mx-0 px-16 py-8 border border-white rounded-xl bg-secondary" transition:fly="{{ y: -50, duration: 500 }}">
+              <h4 class="mb-2 text-lg font-semibold text-indigo-600">扫一扫二维码</h4>
+              <h5 class="mb-4 text-sm text-primary">添加助理 Jenny</h5>
+              <img src="/images/qr-weixin.webp" alt="助理联系微信" class="w-32 border-8 border-white">
+            </div>
+            {/if}
+          </li>
         </ul>
       </div>
       <div>
