@@ -86,10 +86,10 @@ import "@splidejs/svelte-splide/css/core"
 >
   <div class="container mx-auto flex flex-col-reverse md:flex-row gap-4">
     <div>
-      <img src="/images/healing-hero1.svg" alt="" />
+      <img src="/images/healing-hero1.svg" alt="爱自己自信私教项目" />
     </div>
     <div>
-      <img src="/images/healing-hero2.svg" alt="" />
+      <img src="/images/healing-hero2.webp" alt="我们的来访" />
     </div>
   </div>
 </section>
