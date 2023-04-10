@@ -13,7 +13,7 @@ let isOpen = false
         <h3 class="hidden md:block text-xl tracking-wider text-white mb-8">链接</h3>
         <ul class="text-white leading-10 flex flex-col flex-wrap md:flex-col">
           <li><a href="/healing">个人治愈</a></li>
-          <li><a href="/marriage">婚姻提升</a></li>
+          <li><a href="/marriage">婚姻修复</a></li>
           <li>
             <a href="#contact" on:click|preventDefault={()=>(isOpen=!isOpen)}>联系我们</a>
             {#if isOpen}
