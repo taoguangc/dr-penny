@@ -123,7 +123,7 @@
           陪伴困境中的你
         </h3>
         <img
-          src="/images/plight.svg"
+          src="/images/plight.webp"
           alt="陪伴困境中的你"
           class="w-48 sm:w-64 mb-8"
         />
