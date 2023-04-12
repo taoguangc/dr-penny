@@ -1,5 +1,5 @@
 <svelte:head>
-    <title>免费资料</title>
+    <title>免费资料 | Penny博士婚姻与家庭咨询</title>
 </svelte:head>
 
 <section class="py-20">

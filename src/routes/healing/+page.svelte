@@ -77,7 +77,7 @@ import "@splidejs/svelte-splide/css/core"
 </script>
 
 <svelte:head>
-  <title>个人治愈</title>
+  <title>个人治愈 | Penny博士婚姻与家庭咨询</title>
 </svelte:head>
 
 <section

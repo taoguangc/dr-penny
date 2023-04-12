@@ -16,7 +16,7 @@ const studies = [
 </script>
 
 <svelte:head>
-  <title>婚姻修复</title>
+  <title>婚姻修复 | Penny博士婚姻与家庭咨询</title>
 </svelte:head>
 
 <section class="py-20 bg-bottom md:bg-center md:bg-cover md:bg-no-repeat marriage-bg">
