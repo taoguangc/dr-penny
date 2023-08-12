@@ -1,8 +1,9 @@
-// import preprocess from "svelte-preprocess";
+import preprocess from "svelte-preprocess"
 import adapter from "sveltekit-adapter-html-like"
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
+  preprocess: preprocess(),
   kit: {
     adapter: adapter({
       // default options are shown
