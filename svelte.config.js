@@ -1,5 +1,5 @@
 import preprocess from "svelte-preprocess"
-import adapter from "sveltekit-adapter-html-like"
+import adapter from "@sveltejs/adapter-static"
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
