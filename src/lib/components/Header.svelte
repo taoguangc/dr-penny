@@ -60,7 +60,7 @@ function toggle() {
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
         </svg>
       </button>
-      <div on:click={toggle} class:hidden={!isOpen} class="w-full h-screen fixed inset-0 z-20 opacity-50 bg-black"></div>
+      <button on:click={toggle} class:hidden={!isOpen} class="w-full h-screen fixed inset-0 z-20 opacity-50 bg-black"></button>
       <div class:hidden={!isOpen} class="h-screen absolute z-30 top-0 right-0 text-lg bg-secondary shadow-lg">
         <ul class="pt-16">
           {#each nav as item}
@@ -78,6 +78,6 @@ function toggle() {
         <img class="w-32 h-32" src="/images/qr-weixin.webp" alt="微信">
       </div>
     </div>
-    <div on:click={()=>(popOpen=!popOpen)} class:hidden={!popOpen} class="w-full h-screen fixed inset-0 z-20"></div>
+    <button on:click={()=>(popOpen=!popOpen)} class:hidden={!popOpen} class="w-full h-screen fixed inset-0 z-20"></button>
   </div>
 </header>

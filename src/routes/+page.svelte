@@ -95,8 +95,8 @@
   style="background-image: url(/images/hero-bg.svg)"
 >
   <div class="container mx-auto pt-4 pb-6 text-2xl leading-loose relative">
-    <img
-      src="/images/hero-body.webp"
+    <enhanced:img
+      src="../images/hero-body.webp"
       alt=""
       class="h-[85%] absolute bottom-0 left-[45%] z-10"
     />
@@ -122,8 +122,8 @@
         <h3 class="text-base sm:text-3xl font-semibold my-8 mb-4 sm:mb-8">
           陪伴困境中的你
         </h3>
-        <img
-          src="/images/plight.webp"
+        <enhanced:img
+          src="../images/plight.webp"
           alt="陪伴困境中的你"
           class="w-48 sm:w-64 mb-8"
         />
@@ -230,8 +230,8 @@
   >
     <div class="flex-1 flex flex-col justify-center items-center">
       <div class="m-16 mb-4 sm:m-8 relative">
-        <img
-          src="/images/avatar.webp"
+        <enhanced:img
+          src="../images/avatar.webp"
           alt="Penny 博士"
           class="absolute rounded-full w-48 sm:w-auto top-6 left-4 sm:top-5 sm:left-4"
         />

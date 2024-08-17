@@ -16,49 +16,49 @@ import "@splidejs/svelte-splide/css/core"
 
   const steps = [
     {
-      img: "/images/step-1.webp",
+      img: "../../images/step-1.webp",
       title: '第一步: <span class="text-primary">治愈</span>小时候的负面阴影',
       content:
         "无论因为校园经历，还是原生家庭，都需要先从你的潜意识里，走出你小时候的负面经历，让你能对特定人际关系“脱敏”。"
     },
     {
-      img: "/images/step-2.webp",
+      img: "../../images/step-2.webp",
       title: '第二步: <span class="text-indigo-600">解决</span>焦虑和不安',
       content:
         "不要再去压抑，不能再放大负面情绪，你需要用脑神经科学的方法去处理情绪，让它带你走出来."
     },
     {
-      img: "/images/step-3.webp",
+      img: "../../images/step-3.webp",
       title: '第三步: <span class="text-primary">不再</span>对比和自我否定',
       content:
         "你需要学会如何自我共情，如何接纳自己。掌握心理学方法，停下你无法控制的负面想法。"
     },
     {
-      img: "/images/step-4.webp",
+      img: "../../images/step-4.webp",
       title: '第四步: <span class="text-indigo-600">跳出</span>恶性循环',
       content:
         "你需要看到你的“内在运作模式” - 负面情绪 → 负面解读世界 → 缺乏行动力。换一幅眼镜，用积极的视角看自己和世界。"
     },
     {
-      img: "/images/step-5.webp",
+      img: "../../images/step-5.webp",
       title: '第五步: <span class="text-primary">建立</span>并拥有正面情绪',
       content:
         "你要学会肯定自己，鼓励自己，甚至为自己庆祝。积累自己对自己的正面情绪，用更正面的眼光看自己."
     },
     {
-      img: "/images/step-6.webp",
+      img: "../../images/step-6.webp",
       title: '第六步: <span class="text-indigo-600">无负担</span>享受快乐',
       content:
         "你需要知道你值得快乐，放下”快乐就会被批评“的内疚心理。学会处理负面情绪，也学会放松享受乐趣。"
     },
     {
-      img: "/images/step-7.webp",
+      img: "../../images/step-7.webp",
       title: '第七步: <span class="text-primary">养成</span>正面的潜意识',
       content:
         "停止逼迫自己前进，而是用轻松和积极的正面潜意识，去找到你的热情所在，才能获得你想要的生活状态。"
     },
     {
-      img: "/images/step-8.webp",
+      img: "../../images/step-8.webp",
       title:
         '第八步: 养成<span class="text-indigo-600">自信和幸福</span>的生活习惯',
       content:
@@ -89,7 +89,7 @@ import "@splidejs/svelte-splide/css/core"
       <img src="/images/healing-hero1.svg" alt="爱自己自信私教项目" />
     </div>
     <div>
-      <img src="/images/healing-hero2.webp" alt="我们的来访" />
+      <enhanced:img src="../../images/healing-hero2.webp" alt="我们的来访" />
     </div>
   </div>
 </section>
@@ -103,12 +103,12 @@ import "@splidejs/svelte-splide/css/core"
         自信爱自己8步曲
       </h2>
     </div>
-    {#each steps as step}
+    {#each steps as step, i}
       <div
         class="step-box p-2 pt-4 md:p-8 mb-2 md:mb-8 w-full md:w-[60rem] flex flex-row items-start md:items-center"
       >
         <div class="basis-1/6 mr-4 md:mr-8">
-          <img src={step.img} alt="" class="rounded-full" />
+          <img src={step.img} alt="step.title" class="rounded-full" />
         </div>
         <div class="basis-5/6">
           <h4 class="text-base md:text-3xl font-semibold mb-2 md:my-4">
@@ -133,16 +133,16 @@ import "@splidejs/svelte-splide/css/core"
     <div class="m-2 mt-16 md:m-4 p-0 md:p-8 lg:p-16 tabs-box aspect-[3/2]">
       <Tabs>
         <TabList>
-          {#each modules as module, index}
-            <Tab>{index + 1}</Tab>
+          {#each modules as module, i}
+            <Tab>{i + 1}</Tab>
           {/each}
         </TabList>
-        {#each modules as { title, subtitle, homeworks, lessons }, index}
+        {#each modules as { title, subtitle, homeworks, lessons }, i}
           <TabPanel>
             <div class="flex flex-col p-3 pb-6 md:pb-0">
               <div class="ml-4 md:ml-0 mt-8 md:mt-0">
                 <h3 class="text-lg md:text-4xl font-semibold mb-2">
-                  Module {index + 1}
+                  Module {i + 1}
                 </h3>
                 <hr
                   class="w-16 md:w-24 h-1 md:h-2 mb-4 md:mb-8 bg-indigo-300"
@@ -155,7 +155,7 @@ import "@splidejs/svelte-splide/css/core"
               <div
                 class="flex flex-col md:flex-row space-x-0 md:space-x-4 lessons"
               >
-                {#each lessons as { icon, title, content }, index}
+                {#each lessons as { icon, title, content }, i}
                   <div
                     class="flex-1 flex flex-row md:flex-col items-start md:items-center lesson-box p-4 md:py-6 mb-4 relative"
                   >
@@ -163,17 +163,17 @@ import "@splidejs/svelte-splide/css/core"
                       class="flex flex-col-reverse md:flex-col items-center mr-6 md:mr-0"
                     >
                       <h5
-                        class="{index % 2 === 0
+                        class="{i % 2 === 0
                           ? 'text-primary'
                           : 'text-indigo-600'} text-xs md:text-lg  font-semibold md:mb-4"
                       >
-                        Lesson{index + 1}
+                        Lesson{i + 1}
                       </h5>
                       <div class="w-8 flex justify-center">{@html icon}</div>
                     </div>
                     <div class="flex flex-col justify-start">
                       <h4
-                        class="{index % 2 === 0
+                        class="{i % 2 === 0
                           ? 'text-primary'
                           : 'text-indigo-600'} text-base md:text-xl font-semibold md:text-center my-2 md:mb-16"
                       >
